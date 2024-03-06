@@ -1,0 +1,318 @@
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/audiopage/audiopage.scss ***!
+  \************************************************************************************************************************************************/
+#audiopage-page .audio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/lightpage/lightpage.scss ***!
+  \************************************************************************************************************************************************/
+#lightpage-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lightpage-page .lightControls {
+  border: 1px solid hsl(0deg, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  height: 670px;
+}
+#lightpage-page .light__scenecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/mainpage/mainpage.scss ***!
+  \**********************************************************************************************************************************************/
+#mainpage-page .main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#mainpage-page .range-slider {
+  width: 100%;
+}
+#mainpage-page .range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (73px));
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+#mainpage-page .range-slider__range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+#mainpage-page .range-slider__range::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}
+#mainpage-page .range-slider__range:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+#mainpage-page .range-slider__range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+#mainpage-page .range-slider__range::-moz-range-thumb:hover {
+  background: #1abc9c;
+}
+#mainpage-page .range-slider__range:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+#mainpage-page .range-slider__range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+}
+#mainpage-page .range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+#mainpage-page .range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: "";
+}
+#mainpage-page ::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+#mainpage-page input::-moz-focus-inner,
+#mainpage-page input::-moz-focus-outer {
+  border: 0;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/settingspage/settingspage.scss ***!
+  \******************************************************************************************************************************************************/
+#settingspage-page .settings__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/shadespage/shadespage.scss ***!
+  \**************************************************************************************************************************************************/
+#shadespage-page .shades__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/videopage/videopage.scss ***!
+  \************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/lightcontrolwidget/lightcontrolwidget.scss ***!
+  \********************************************************************************************************************************************************************/
+.lightcontrolwidget-widget {
+  border: 1px solid hsl(0deg, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  padding: auto;
+  margin: 1px;
+  text-align: center;
+  max-width: 350px;
+  display: inline-block;
+}
+.lightcontrolwidget-widget .lightCardTitle {
+  margin: 5px;
+  color: hsl(0deg, 0%, 20%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.lightcontrolwidget-widget .lightCardTitle .ch5-jointotext-string {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.lightcontrolwidget-widget .lightCardSlider {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.lightcontrolwidget-widget .lightCardSlider i {
+  color: #e8a910;
+  font-size: 16px;
+}
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider > div .noUi-base .noUi-target {
+  border-radius: 0px;
+}
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-handle {
+  background-color: #3c7440;
+  border: 0px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.lightcontrolwidget-widget .lightCardSlider .lightCardButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.lightcontrolwidget-widget .lightCardButton {
+  margin: 5px;
+}
+.lightcontrolwidget-widget .lightCardButton .ch5-button {
+  margin: 5px;
+  border-style: solid;
+  border-color: #0091ea;
+  color: #ffffff;
+  background-color: #c1cacf;
+  border-width: 0;
+}
+.lightcontrolwidget-widget .lightCardButton .ch5-button--icon {
+  font-size: 30px;
+  color: #797518;
+}
+.lightcontrolwidget-widget .lightCardButton .ch5-button--pressed {
+  color: #f0fff0;
+  background-color: rgba(88, 112, 128, 0.7725490196);
+  border-color: #0091ea;
+}
+/*!**************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/lightquicklanchwidget/lightquicklanchwidget.scss ***!
+  \**************************************************************************************************************************************************************************/
+.lightquicklanchwidget-widget .light__scenecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border: 1px solid hsl(0deg, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  padding: auto;
+  width: 145px;
+}
+.lightquicklanchwidget-widget .scene__header {
+  height: 40px;
+  width: 145px;
+  border-radius: 10px 10px 0px 0px;
+  background: rgba(137, 43, 226, 0.889);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.lightquicklanchwidget-widget .scene__header h5 {
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.lightquicklanchwidget-widget .light__scenebuttonlist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.lightquicklanchwidget-widget .light__scenebuttonlist ch5-button {
+  min-width: fit-content;
+}
+.lightquicklanchwidget-widget .filter__button {
+  margin: 2px;
+  height: 35px;
+  color: rgb(8, 8, 8);
+  border: 0px 2px 0px 0px;
+  align-items: center;
+  border-color: blueviolet;
+}
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/lightscenewidget/lightscenewidget.scss ***!
+  \****************************************************************************************************************************************************************/
+.lightscenewidget-widget .light__scenecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border: 1px solid hsl(0deg, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  padding: auto;
+  width: 145px;
+}
+.lightscenewidget-widget .scene__header {
+  height: 40px;
+  width: 145px;
+  border-radius: 10px 10px 0px 0px;
+  background: rgba(137, 43, 226, 0.889);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.lightscenewidget-widget .scene__header h5 {
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.lightscenewidget-widget .light__scenebuttonlist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.lightscenewidget-widget .light__scenebuttonlist ch5-button {
+  padding: 5px;
+  min-width: fit-content;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/pagedisplay/pagedisplay.scss ***!
+  \******************************************************************************************************************************************************/
+.pagedisplay-widget h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 300%;
+  opacity: 0.5;
+  text-shadow: 1px 1px 1px #fff;
+}
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/projectheader/projectheader.scss ***!
+  \**********************************************************************************************************************************************************/
+

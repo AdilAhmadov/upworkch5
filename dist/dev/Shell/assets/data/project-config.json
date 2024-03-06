@@ -1,0 +1,226 @@
+{
+  "projectName": "upworkch5",
+  "version": "0.0.1",
+  "faviconPath": "favicon.ico",
+  "menuOrientation": "horizontal",
+  "selectedTheme": "light-theme",
+  "useWebXPanel": true,
+  "themes": [
+    {
+      "name": "light-theme",
+      "extends": "light-theme",
+      "backgroundProperties": {
+        "backgroundColor": [
+          "#f8f8f8"
+        ]
+      }
+    },
+    {
+      "name": "dark-theme",
+      "extends": "dark-theme",
+      "brandLogo": {
+        "url": "./app/template/assets/img/ch5-logo-dark.svg",
+        "alt": "Crestron Logo",
+        "receiveStateUrl": ""
+      },
+      "backgroundProperties": {
+        "backgroundColor": [
+          "#1a1a1a"
+        ]
+      }
+    },
+    {
+      "name": "project-light-theme",
+      "extends": "light-theme",
+      "brandLogo": {
+        "url": "./app/template/assets/img/ch5-logo-light.svg",
+        "alt": "Crestron Logo",
+        "receiveStateUrl": ""
+      },
+      "backgroundProperties": {
+        "backgroundColor": [
+          "#f8f8f8"
+        ]
+      }
+    },
+    {
+      "name": "project-dark-theme",
+      "extends": "dark-theme",
+      "brandLogo": {
+        "url": "./app/template/assets/img/ch5-logo-dark.svg",
+        "alt": "Crestron Logo",
+        "receiveStateUrl": ""
+      },
+      "backgroundProperties": {
+        "backgroundColor": [
+          "#1a1a1a"
+        ]
+      }
+    },
+    {
+      "name": "project-custom-theme",
+      "extends": "light-theme",
+      "brandLogo": {
+        "url": "./app/template/assets/img/ch5-logo-light.svg",
+        "alt": "Crestron Logo",
+        "receiveStateUrl": ""
+      },
+      "backgroundProperties": {
+        "backgroundColor": [
+          "#f8f8f8"
+        ]
+      }
+    }
+  ],
+  "config": {
+    "controlSystem": {}
+  },
+  "header": {
+    "display": false,
+    "displayInfo": true,
+    "diagnostics": {
+      "logs": {
+        "logAfterProjectLoad": true,
+        "receiveStateLogDiagnostics": "",
+        "logDiagnostics": "none"
+      }
+    },
+    "$component": ""
+  },
+  "footer": {
+    "display": false,
+    "$component": ""
+  },
+  "content": {
+    "$defaultView": "lightpage",
+    "triggerViewProperties": {
+      "gestureable": false,
+      "disableAnimation": true
+    },
+    "pages": [
+      {
+        "pageName": "mainpage",
+        "fullPath": "./app/project/components/pages/mainpage/",
+        "fileName": "mainpage.html",
+        "preloadPage": true,
+        "cachePage": false,
+        "standAloneView": false,
+        "navigation": {
+          "sequence": 1,
+          "label": "",
+          "isI18nLabel": false,
+          "iconClass": "",
+          "iconUrl": "../app/template/assets/img/home-1-svgrepo-com.svg",
+          "iconPosition": "bottom"
+        }
+      },
+      {
+        "pageName": "audiopage",
+        "fullPath": "./app/project/components/pages/audiopage/",
+        "fileName": "audiopage.html",
+        "preloadPage": true,
+        "cachePage": false,
+        "standAloneView": false,
+        "navigation": {
+          "sequence": 2,
+          "label": "",
+          "isI18nLabel": false,
+          "iconClass": "",
+          "iconUrl": "../app/template/assets/img/audio-svgrepo-com.svg",
+          "iconPosition": "bottom"
+        }
+      },
+      {
+        "pageName": "videopage",
+        "fullPath": "./app/project/components/pages/videopage/",
+        "fileName": "videopage.html",
+        "preloadPage": true,
+        "cachePage": false,
+        "standAloneView": false,
+        "navigation": {
+          "sequence": 3,
+          "label": "",
+          "isI18nLabel": false,
+          "iconClass": "",
+          "iconUrl": "../app/template/assets/img/window-6-svgrepo-com.svg",
+          "iconPosition": "bottom"
+        }
+      },
+      {
+        "pageName": "lightpage",
+        "fullPath": "./app/project/components/pages/lightpage/",
+        "fileName": "lightpage.html",
+        "preloadPage": true,
+        "cachePage": false,
+        "standAloneView": false,
+        "navigation": {
+          "sequence": 4,
+          "label": "",
+          "isI18nLabel": false,
+          "iconClass": "",
+          "iconUrl": "../app/template/assets/img/light-bulb-svgrepo-com.svg",
+          "iconPosition": "bottom"
+        }
+      },
+      {
+        "pageName": "shadespage",
+        "fullPath": "./app/project/components/pages/shadespage/",
+        "fileName": "shadespage.html",
+        "preloadPage": true,
+        "cachePage": false,
+        "standAloneView": false,
+        "navigation": {
+          "sequence": 5,
+          "label": "",
+          "isI18nLabel": false,
+          "iconClass": "",
+          "iconUrl": "../app/template/assets/img/window-6-svgrepo-com.svg",
+          "iconPosition": "bottom"
+        }
+      },
+      {
+        "pageName": "settingspage",
+        "fullPath": "./app/project/components/pages/settingspage/",
+        "fileName": "settingspage.html",
+        "preloadPage": true,
+        "cachePage": false,
+        "standAloneView": false,
+        "navigation": {
+          "sequence": 6,
+          "label": "",
+          "isI18nLabel": false,
+          "iconClass": "",
+          "iconUrl": "../app/template/assets/img/gear-1-svgrepo-com.svg",
+          "iconPosition": "bottom"
+        }
+      }
+    ],
+    "widgets": [
+      {
+        "widgetName": "lightcontrolwidget",
+        "fullPath": "./app/project/components/widgets/lightcontrolwidget/",
+        "fileName": "lightcontrolwidget.html"
+      },
+      {
+        "widgetName": "lightscenewidget",
+        "fullPath": "./app/project/components/widgets/lightscenewidget/",
+        "fileName": "lightscenewidget.html"
+      },
+      {
+        "widgetName": "projectheader",
+        "fullPath": "./app/project/components/widgets/projectheader/",
+        "fileName": "projectheader.html"
+      },
+      {
+        "widgetName": "lightquicklanchwidget",
+        "fullPath": "./app/project/components/widgets/lightquicklanchwidget/",
+        "fileName": "lightquicklanchwidget.html"
+      },
+      {
+        "widgetName": "pagedisplay",
+        "fullPath": "./app/project/components/widgets/pagedisplay/",
+        "fileName": "pagedisplay.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+
+
+<template id="lightcontrolwidget-widget"> 
+    <div class="lightcontrolwidget-widget" aria-labelledby="Lightcontrolwidget"> 
+        <div class="lightCardTitle">
+            <div> 
+                <ch5-jointotext-string value="Wall Light" style="font-size: 14px;" > </ch5-jointotext-string> 
+            </div>
+            <div>
+                <h5>50%</h5>
+            </div>
+        </div>
+            <div class="lightCardSlider">
+               
+                <i class="far fa-sun"></i>
+                <ch5-slider value="20"
+                        id="LightSlider"
+                        min="0"
+                        max="100"
+                        step="1"
+                        value="50"
+                        sendeventonchange="slider_value_on_change"
+                        receivestatevalue="receive_slider_value" size="small"
+                        >
+                      </ch5-slider>
+                      <i class="fas fa-sun"></i>
+                </div>
+                <div class="lightCardButton">
+                    <ch5-button id="LightBtnOn"  sendeventonclick="btn_id_clicked"
+                        iconclass="far fa-lightbulb">
+                    </ch5-button>
+
+                    <ch5-button id="LightBtnOff"
+                    
+                    sendeventonclick="btn_id_clicked"
+                    iconclass="fas fa-lightbulb">
+                </ch5-button>
+            </div>
+       
+    </div>
+</template>
+
+<!-- 
+<div class="lightcontrolwidget-widget" aria-labelledby="Lightcontrolwidget"> 
+    <div class="card">
+        <div class="row m-2"> 
+            <div class="col-6">             
+                <h5 class="card-title">Wall Light</h5>
+            </div>
+            <div class="col-6" style="text-align: right;">
+                <h5>50%</h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <ch5-slider value="20"
+                    min="0"
+                    max="100"
+                    step="1"
+                    sendeventonchange="slider_value_on_change"
+                    receivestatevalue="receive_slider_value" size="small">
+                  </ch5-slider>
+                </div>                  
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ch5-button id="btn_id"
+                    label="Light On"
+                    sendeventonclick="btn_id_clicked">
+                </ch5-button>
+                </div>
+                <div class="col">
+                    <ch5-button id="btn_id"
+                    label="Light Off"
+                    sendeventonclick="btn_id_clicked">
+                </ch5-button>
+                </div>
+                
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+-->

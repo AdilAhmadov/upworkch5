@@ -1,0 +1,44 @@
+.lightscenewidget-widget {
+   .light__scenecontainer{
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: nowrap;
+      border: 1px solid hsl(0, 0%, 80%);
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.1);
+      padding: auto;  
+      width: 145px;
+   }
+   .scene__header{
+      height: 40px;
+      width: 145px;
+      border-radius: 10px 10px 0px 0px;
+      background: rgba(137, 43, 226, 0.889);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      h5{
+         font-size: 20px;
+         color: aliceblue;
+         font-weight: bold;
+         
+      }
+      
+   }
+   .light__scenebuttonlist{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      ch5-button{
+         padding: 5px;
+         min-width: fit-content;
+      }
+   }
+   
+}

@@ -1,0 +1,76 @@
+$fontFamily: sans-serif;
+
+.lightcontrolwidget-widget {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.1);
+  padding: auto;
+  margin: 1px;
+  text-align: center;
+  max-width: 350px;
+  display: inline-block;
+
+  .lightCardTitle {
+    margin: 5px;
+    color: hsl(0, 0%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .ch5-jointotext-string{
+      font-family: $fontFamily;
+      font-size: 14px;
+    }
+  }
+  .lightCardSlider {
+    margin-left: 5px;
+    margin-right: 5px;
+     i{
+      color: #e8a910;
+      font-size: 16px;
+     }
+     .ch5-slider {
+      >div{
+        .noUi-base .noUi-target {
+          border-radius: 0px;
+      }
+     }
+    }
+    .ch5-slider .noUi-handle{
+      background-color: #3c7440;
+      border: 0px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .lightCardSlider
+  .lightCardButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightCardButton {
+    margin: 5px;
+    .ch5-button {
+      margin: 5px;
+      border-style: solid;
+      border-color: #0091ea;
+      color: #ffffff;
+      background-color: #c1cacf;
+      border-width: 0;
+    }
+    .ch5-button--icon {
+      font-size: 30px;
+      color: #797518;
+    }
+    .ch5-button--pressed {
+      color: #f0fff0;
+      background-color: #587080c5;
+      border-color: #0091ea;
+    }
+  }
+  
+ 
+}

@@ -1,0 +1,22 @@
+
+#lightpage-page {
+
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+    .lightControls{
+        border: 1px solid hsl(0, 0%, 80%);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.1);
+        padding: auto;  
+        display: flex;
+        justify-content: center;
+        height: 670px;
+    }
+    .light__scenecontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
