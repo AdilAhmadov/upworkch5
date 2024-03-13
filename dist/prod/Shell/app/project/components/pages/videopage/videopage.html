@@ -22,20 +22,21 @@
     </template>
     
 <div class="container-fluid">
-        <div class="row">
+        <div class="row gap-2">
             <div class="col-11 tv__listSection">
                 <ch5-subpage-reference-list
-                    widgetid="tvcontrols-widget" orientation="vertical" rows="10" columns="5" numberofitems="50" centeritems="false" scrollbar="false"  
-                    indexid="{{idx}}" loadItems="load-new" >
+                    widgetid="tvcontrols-widget" orientation="vertical" columns="5" numberofitems="50" endless="false" centeritems="true" scrollbar="false"  
+                    indexid="{{idx}}"  >
                 </ch5-subpage-reference-list>
             </div>
             <!--Video Preset Control-->
-        <div class="col">
+        <div class="col tv__listButtonSection">
+            <div style="height: 50px; background-color: blueviolet;"></div>
             <ch5-button-list
               id="ch5-button-list_id"
               orientation="vertical"
               scrollbar="false"
-              buttontype="info"
+              buttontype="default"
               endless="false"
               numberOfItems="6"
               rows="1"
