@@ -1,12 +1,12 @@
-# Shell Template
+# Crestron CH5 UI Project
 
-The shell template uses CH5 library and Vanilla Javascript which helps to kick-start your project to build fast, robust, and adaptable web apps with little changes. The project can be deployed on TSW Panels, Android and iOS devices.
+The uses CH5 library and Vanilla Javascript which helps to kick-start your project to build fast, robust, and adaptable web apps with little changes. The project can be deployed on TSW Panels, Android and iOS devices.
  
 ## See www.crestron.com/developer for documentation
 
 https://www.crestron.com/developer
 
-# Shell Template
+# Crestron CH5 UI Project
 
 The project have dependencies that require nodejs(https://nodejs.org), together with NPM.
 
