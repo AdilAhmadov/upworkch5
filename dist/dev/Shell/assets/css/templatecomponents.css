@@ -23,6 +23,11 @@
   font-size: 14px;
 }
 
+.ch5-datetime {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 #template-index-import-page,
 #template-index-import-page > div {
   max-height: 100%;
