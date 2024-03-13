@@ -1,11 +1,16 @@
 
 #shadespage-page {
-
+    ch5-jointotext-numeric {
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: bold;
+        border: solid 1px dimgray;
+    }
     .shades__container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
        }
     }

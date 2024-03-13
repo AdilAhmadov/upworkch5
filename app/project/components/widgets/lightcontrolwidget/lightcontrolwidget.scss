@@ -14,34 +14,85 @@ $fontFamily: sans-serif;
     margin: 5px;
     color: hsl(0, 0%, 20%);
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
-
-    .ch5-jointotext-string{
+    
+    ch5-jointotext-string{
+      padding: 5px;
       font-family: $fontFamily;
       font-size: 14px;
+      font-weight: bold;
     }
   }
   .lightCardSlider {
     margin-left: 5px;
     margin-right: 5px;
+    
      i{
       color: #e8a910;
       font-size: 16px;
      }
      .ch5-slider {
       >div{
-        .noUi-base .noUi-target {
-          border-radius: 0px;
+        .ch5-slider .noUi-target {
+          -webkit-appearance: none;
+          appearance: none;
+          height: 2px;
       }
      }
     }
-    .ch5-slider .noUi-handle{
-      background-color: #3c7440;
-      border: 0px;
+    .ch5-slider .noUi-connects, .noUi-base {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 8px;
+    }
+    .ch5-slider .noUi-connects{
+      height: 2px;
+      border: none;
+      inset: 2px;
+     //background: #e8a910;
+      
+    }
+    .ch5-slider .noUi-base {
+      //-webkit-appearance: none;
+      //appearance: none;
+      //background: #409934;
+	    height: 2px;
+      background-image: repeating-linear-gradient(to bottom, black 0%, black 50%, transparent 50% transparent 100%);
+	    //width: 55%;
+       border: none;
+       border-bottom: 5px dotted rgb(155, 146, 141);
+       color: #fff;
+       background-color: #fff;
+       
+
+	    //border-radius: 1rem;
+	    //box-shadow: 1px 5px 5px rgba(black, 0.3);
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+    }
+    .ch5-slider .noUi-target {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 2px;
+      background: #080e07;
+      display: flex;
+      
+      align-items: center;
+      justify-items: center;
+  }
+    .ch5-slider--size--small .noUi-handle{
+      //background-color: gray;
+      border: none;
       border-radius: 50%;
+      top: -18px;
       width: 30px;
-      height: 30px;
+      background-image: url("./light-bulb-svgrepo-com.svg");
+      
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: .2s ease-in-out;
     }
   }
   .lightCardSlider
@@ -50,6 +101,7 @@ $fontFamily: sans-serif;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    align-items: center;
   }
   .lightCardButton {
     margin: 5px;

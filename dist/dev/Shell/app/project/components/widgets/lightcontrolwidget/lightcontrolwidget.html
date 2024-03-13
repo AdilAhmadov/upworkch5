@@ -3,13 +3,15 @@
 <template id="lightcontrolwidget-widget"> 
     <div class="lightcontrolwidget-widget" aria-labelledby="Lightcontrolwidget"> 
         <div class="lightCardTitle">
-            <div> 
-                <ch5-jointotext-string value="Wall Light" style="font-size: 14px;" > </ch5-jointotext-string> 
+            <div> <!--receiveStateValue="1" -->
+                <ch5-jointotext-string value="Wall Light"  > </ch5-jointotext-string> 
             </div>
-            <div>
-                <h5>50%</h5>
+            <div> <!--receiveStateValue="1" -->
+                <ch5-jointotext-string value="50 %" > </ch5-jointotext-string> 
             </div>
         </div>
+        <br/>
+       
             <div class="lightCardSlider">
                
                 <i class="far fa-sun"></i>
@@ -19,20 +21,20 @@
                         max="100"
                         step="1"
                         value="50"
-                        sendeventonchange="slider_value_on_change"
-                        receivestatevalue="receive_slider_value" size="small"
+                        sendeventonchange="1"
+                        receivestatevalue="1" size="small"
                         >
                       </ch5-slider>
                       <i class="fas fa-sun"></i>
                 </div>
                 <div class="lightCardButton">
-                    <ch5-button id="LightBtnOn"  sendeventonclick="btn_id_clicked"
+                    <ch5-button id="LightBtnOn"  sendeventonclick="1" 
                         iconclass="far fa-lightbulb">
                     </ch5-button>
 
                     <ch5-button id="LightBtnOff"
                     
-                    sendeventonclick="btn_id_clicked"
+                    sendeventonclick="2"
                     iconclass="fas fa-lightbulb">
                 </ch5-button>
             </div>

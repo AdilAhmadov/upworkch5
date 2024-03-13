@@ -70,6 +70,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./app/project/components/pages/signin/signin.scss":
+/*!*********************************************************!*\
+  !*** ./app/project/components/pages/signin/signin.scss ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/pages/signin/signin.scss?");
+
+/***/ }),
+
 /***/ "./app/project/components/pages/videopage/videopage.scss":
 /*!***************************************************************!*\
   !*** ./app/project/components/pages/videopage/videopage.scss ***!
@@ -77,6 +87,46 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/pages/videopage/videopage.scss?");
+
+/***/ }),
+
+/***/ "./app/project/components/widgets/audiocontrols/audiocontrols.scss":
+/*!*************************************************************************!*\
+  !*** ./app/project/components/widgets/audiocontrols/audiocontrols.scss ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/audiocontrols/audiocontrols.scss?");
+
+/***/ }),
+
+/***/ "./app/project/components/widgets/circulebuttons/circulebuttons.scss":
+/*!***************************************************************************!*\
+  !*** ./app/project/components/widgets/circulebuttons/circulebuttons.scss ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/circulebuttons/circulebuttons.scss?");
+
+/***/ }),
+
+/***/ "./app/project/components/widgets/dpadcontrol/dpadcontrol.scss":
+/*!*********************************************************************!*\
+  !*** ./app/project/components/widgets/dpadcontrol/dpadcontrol.scss ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/dpadcontrol/dpadcontrol.scss?");
+
+/***/ }),
+
+/***/ "./app/project/components/widgets/keypadcontrol/keypadcontrol.scss":
+/*!*************************************************************************!*\
+  !*** ./app/project/components/widgets/keypadcontrol/keypadcontrol.scss ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/keypadcontrol/keypadcontrol.scss?");
 
 /***/ }),
 
@@ -128,6 +178,36 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/projectheader/projectheader.scss?");
 
+/***/ }),
+
+/***/ "./app/project/components/widgets/sourcecommandscontrols/sourcecommandscontrols.scss":
+/*!*******************************************************************************************!*\
+  !*** ./app/project/components/widgets/sourcecommandscontrols/sourcecommandscontrols.scss ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/sourcecommandscontrols/sourcecommandscontrols.scss?");
+
+/***/ }),
+
+/***/ "./app/project/components/widgets/sourcelist/sourcelist.scss":
+/*!*******************************************************************!*\
+  !*** ./app/project/components/widgets/sourcelist/sourcelist.scss ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/sourcelist/sourcelist.scss?");
+
+/***/ }),
+
+/***/ "./app/project/components/widgets/tvcontrols/tvcontrols.scss":
+/*!*******************************************************************!*\
+  !*** ./app/project/components/widgets/tvcontrols/tvcontrols.scss ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/tvcontrols/tvcontrols.scss?");
+
 /***/ })
 
 /******/ 	});
@@ -157,13 +237,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	__webpack_modules__["./app/project/components/pages/mainpage/mainpage.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/pages/settingspage/settingspage.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/pages/shadespage/shadespage.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/pages/signin/signin.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/pages/videopage/videopage.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/audiocontrols/audiocontrols.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/circulebuttons/circulebuttons.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/dpadcontrol/dpadcontrol.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/keypadcontrol/keypadcontrol.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/lightcontrolwidget/lightcontrolwidget.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/lightquicklanchwidget/lightquicklanchwidget.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/lightscenewidget/lightscenewidget.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/pagedisplay/pagedisplay.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/projectheader/projectheader.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/sourcecommandscontrols/sourcecommandscontrols.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/sourcelist/sourcelist.scss"](0, {}, __webpack_require__);
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./app/project/components/widgets/projectheader/projectheader.scss"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/tvcontrols/tvcontrols.scss"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ 	return __webpack_exports__;
 /******/ })()

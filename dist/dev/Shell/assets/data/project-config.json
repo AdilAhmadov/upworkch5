@@ -9,10 +9,8 @@
     {
       "name": "light-theme",
       "extends": "light-theme",
-      "backgroundProperties": {
-        "backgroundColor": [
-          "#f8f8f8"
-        ]
+      "backgroundProperties": {    
+        
       }
     },
     {
@@ -76,7 +74,7 @@
     "controlSystem": {}
   },
   "header": {
-    "display": false,
+    "display": true,
     "displayInfo": true,
     "diagnostics": {
       "logs": {
@@ -92,7 +90,7 @@
     "$component": ""
   },
   "content": {
-    "$defaultView": "lightpage",
+    "$defaultView": "audiopage",
     "triggerViewProperties": {
       "gestureable": false,
       "disableAnimation": true
@@ -142,7 +140,7 @@
           "label": "",
           "isI18nLabel": false,
           "iconClass": "",
-          "iconUrl": "../app/template/assets/img/window-6-svgrepo-com.svg",
+          "iconUrl": "../app/template/assets/img/tv-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
       },
@@ -193,6 +191,22 @@
           "iconUrl": "../app/template/assets/img/gear-1-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
+      },
+      {
+        "pageName": "signin",
+        "fullPath": "./app/project/components/pages/signin/",
+        "fileName": "signin.html",
+        "preloadPage": true,
+        "cachePage": false,
+        "standAloneView": false,
+        "navigation": {
+          "sequence": 7,
+          "label": "signin",
+          "isI18nLabel": false,
+          "iconClass": "fas fa-file-alt",
+          "iconUrl": "",
+          "iconPosition": "bottom"
+        }
       }
     ],
     "widgets": [
@@ -220,6 +234,41 @@
         "widgetName": "pagedisplay",
         "fullPath": "./app/project/components/widgets/pagedisplay/",
         "fileName": "pagedisplay.html"
+      },
+      {
+        "widgetName": "audiocontrols",
+        "fullPath": "./app/project/components/widgets/audiocontrols/",
+        "fileName": "audiocontrols.html"
+      },
+      {
+        "widgetName": "keypadcontrol",
+        "fullPath": "./app/project/components/widgets/keypadcontrol/",
+        "fileName": "keypadcontrol.html"
+      },
+      {
+        "widgetName": "dpadcontrol",
+        "fullPath": "./app/project/components/widgets/dpadcontrol/",
+        "fileName": "dpadcontrol.html"
+      },
+      {
+        "widgetName": "circulebuttons",
+        "fullPath": "./app/project/components/widgets/circulebuttons/",
+        "fileName": "circulebuttons.html"
+      },
+      {
+        "widgetName": "sourcecommandscontrols",
+        "fullPath": "./app/project/components/widgets/sourcecommandscontrols/",
+        "fileName": "sourcecommandscontrols.html"
+      },
+      {
+        "widgetName": "sourcelist",
+        "fullPath": "./app/project/components/widgets/sourcelist/",
+        "fileName": "sourcelist.html"
+      },
+      {
+        "widgetName": "tvcontrols",
+        "fullPath": "./app/project/components/widgets/tvcontrols/",
+        "fileName": "tvcontrols.html"
       }
     ]
   }

@@ -1,0 +1,178 @@
+{
+  "cues": [],
+  "onStart": [  
+    {
+      "state": "Audio_Zone.Contract[0].label",
+      "type": "s",
+      "value": "LANES"
+    },
+    {
+      "state": "Audio_Zone.Contract[1].label",
+      "type": "s",
+      "value": "CONCOURSE"
+    },
+    {
+      "state": "Audio_Zone.Contract[2].label",
+      "type": "s",
+      "value": "ARCADE"
+    },
+    {
+      "state": "Audio_Zone.Contract[3].label",
+      "type": "s",
+      "value": "BAR"
+    },
+    {
+      "state": "Audio_Zone.Contract[4].label",
+      "type": "s",
+      "value": "FRONT Desk"
+    },
+    {
+      "state": "Audio_Zone.Contract[5].label",
+      "type": "s",
+      "value": "ENTRANCE"
+    },
+    {
+      "state": "Audio_Zone.Contract[6].label",
+      "type": "s",
+      "value": "REST ROOMS"
+    },
+    {
+      "state": "Audio_Zone.Contract[7].label",
+      "type": "s",
+      "value": "ZONE-1"
+    },
+    {
+      "state": "Audio_Zone.Contract[8].label",
+      "type": "s",
+      "value": "ZONE-2"
+    },
+    {
+      "state": "Audio_Zone.Contract[9].label",
+      "type": "s",
+      "value": "ZONE-3"
+    },
+    {
+      "state": "Audio_Zone.Contract[10].label",
+      "type": "s",
+      "value": "ZONE-4"
+    },
+    {
+      "state": "Audio_Zone.Contract[11].label",
+      "type": "s",
+      "value": "ZONE-5"
+    },
+    {
+      "state": "Audio_Zone.Contract[0].value",
+      "type": "s",
+      "value": "50 %"
+    },
+    {
+      "state": "Audio_Zone.Contract[1].value",
+      "type": "s",
+      "value": "68 %"
+    } ,
+    {
+      "state": "Audio_Zone.Contract[2].value",
+      "type": "s",
+      "value": "70 %"
+    } ,
+    {
+      "state": "Audio_Zone.Contract[3].value",
+      "type": "s",
+      "value": "96 %"
+    } ,
+    {
+      "state": "Audio_Zone.Contract[4].value",
+      "type": "s",
+      "value": "100 %"
+    } ,
+    {
+      "state": "Audio_Zone.Contract[5].value",
+      "type": "s",
+      "value": "25 %"
+    } ,
+    {
+      "state": "Audio_Zone.Contract[6].value",
+      "type": "s",
+      "value": "27 %"
+    } ,
+    {
+      "state": "Audio_Zone.Contract[7].value",
+      "type": "s",
+      "value": "63 %"
+    },
+    {
+      "state": "Audio_Zone.Contract[8].value",
+      "type": "s",
+      "value": "12 %"
+    },
+    {
+      "state": "Audio_Zone.Contract[9].value",
+      "type": "s",
+      "value": "33 %"
+    },
+    {
+      "state": "Audio_Zone.Contract[10].value",
+      "type": "s",
+      "value": "74 %"
+    },
+    {
+      "state": "Audio_Zone.Contract[11].value",
+      "type": "s",
+      "value": "45 %"
+    } ,
+    {
+      "state": "Audio_Zone.Select.Contract[0].item",
+      "type": "s",
+      "value": "DTV-1"
+    } ,
+    {
+      "state": "Audio_Zone.Select.Contract[1].item",
+      "type": "s",
+      "value": "DTV-2"
+    } ,
+    {
+      "state": "Audio_Zone.Select.Contract[2].item",
+      "type": "s",
+      "value": "DTV-3"
+    } ,
+    {
+      "state": "Audio_Zone.Select.Contract[3].item",
+      "type": "s",
+      "value": "BlueRay-1"
+    }  ,
+    {
+      "state": "Audio_Zone.Select.Contract[4].item",
+      "type": "s",
+      "value": "BlueRay-2"
+    }  ,
+    {
+      "state": "Audio_Zone.Select.Contract[5].item",
+      "type": "s",
+      "value": "BlueRay-3"
+    }  ,
+    {
+      "state": "Audio_Zone.Select.Contract[6].item",
+      "type": "s",
+      "value": "Microphone"
+    } 
+    ,
+    {
+      "state": "Audio_Zone.Select.Contract[7].item",
+      "type": "s",
+      "value": "BMN Source"
+    } 
+    ,
+    {
+      "state": "Audio_Zone.Select.Contract[8].item",
+      "type": "s",
+      "value": "XLR Wallplate"
+    } 
+    ,
+    {
+      "state": "Audio_Zone.Select.Contract[9].item",
+      "type": "s",
+      "value": "HDMI Wallplate"
+    } 
+  ]
+}

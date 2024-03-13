@@ -1,0 +1,55 @@
+
+
+<template id="audiocontrols-widget"> 
+    <div class="container audiocontrols-widget"> <!--audiocontrols-widget-->
+        <div class="row"> <!--audio_zone-header-->
+          <div class="col"> <!--audio__zone-label-->
+            <ch5-jointotext-string receivestatevalue="Audio_Zone.Contract[{{idx}}].label"> </ch5-jointotext-string>
+          </div> 
+          <div class="col"> <!--audio__zone-value-->
+            <ch5-jointotext-string receivestatevalue="Audio_Zone.Contract[{{idx}}].value"> </ch5-jointotext-string>
+          </div>  
+          <div class="col"> <!--audio__zone-sourceSelection-->
+            <!--receivestatevalue="Audio_Zone.Contract[{{idx}}].source"-->
+                <ch5-button id="btn_id" label="Source" sendeventonclick="Audio_Zone.Contract.Modal" stretch="both" type="success"></ch5-button>
+        </div>
+        <div class="row">
+            <div class="col text-center border-bottom-5 ">
+              <ch5-jointotext-string receivestatevalue="Audio_Zone.Contract[{{idx}}].label"> </ch5-jointotext-string>
+            </div>            
+        </div>
+        <div class="row mt-2"> <!--audio__zone-button-container-->
+          <div class="col">
+          <!--Mute Button-->
+          <ch5-button
+            iconclass="fas fa-volume-xmark"
+            sendEventOnClick="Audio_Zone.Contract_Mute-[{{idx}}].click"
+            receiveStateSelected="Audio_Zone.Contract_Mute-[{{idx}}].selected" type="danger">
+          </ch5-button>
+  
+          <!--Master Check box Button-->
+          <ch5-button
+            checkboxshow="true"
+            label="Master"
+            sendEventOnClick="Audio_Zone.Contract_Master-[{{idx}}].click"
+            receiveStateSelected="Audio_Zone.Contract_Master-[{{idx}}].selected" type="secondary">
+          </ch5-button>
+  
+          <!--Valume Down Button-->
+          <ch5-button
+            iconclass="fas fa-volume-low"
+            sendEventOnClick="Audio_Zone.Contract_VolumeDown-[{{idx}}].click"
+            receiveStateSelected="Audio_Zone.Contract_VolumeDown-[{{idx}}].selected"
+          >
+          </ch5-button>
+  
+          <!--Valume Up Button-->
+          <ch5-button
+            iconclass="fas fa-volume-high"
+            sendEventOnClick="Audio_Zone.Contract_VolumeUp-[{{idx}}].click"
+            receiveStateSelected="Audio_Zone.Contract_VolumeUp-[{{idx}}].selected">
+          </ch5-button>
+        </div>
+      </div>
+      </div>
+</template>

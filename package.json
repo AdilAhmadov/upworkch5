@@ -1,6 +1,6 @@
 {
   "name": "upworkch5",
-  "version": "2.5.0",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE.txt",
   "scripts": {
@@ -75,8 +75,6 @@
     "@crestron/ch5-webxpanel": "^2.8.0"
   },
   "files": [
-    "copyright.txt",
-    "LICENSE.txt",
     "*.js",
     "README.md",
     "app/**/*",

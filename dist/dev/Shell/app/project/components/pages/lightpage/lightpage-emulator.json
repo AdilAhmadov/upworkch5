@@ -1,4 +1,30 @@
 {
-  "cues": [],
-  "onStart": []
+  "cues": [
+    {
+      "type": "boolean",
+      "event": "increment",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "selected_button",
+          "type": "n",
+          "logic": "increment",
+          "offset": 1
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "decrement",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "selected_button",
+          "type": "n",
+          "logic": "decrement",
+          "offset": 1
+        }
+      ]
+    }
+  ]
 }

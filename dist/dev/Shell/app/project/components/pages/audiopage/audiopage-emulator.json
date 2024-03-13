@@ -1,4 +1,202 @@
 {
-  "cues": [],
-  "onStart": []
+  "cues": [
+    {
+      "type": "boolean",
+      "event": "increase_mode",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "button-mode-0",
+          "type": "n",
+          "logic": "increment",
+          "offset": 1
+        },
+        {
+          "state": "button-mode-1",
+          "type": "n",
+          "logic": "increment",
+          "offset": 1
+        },
+        {
+          "state": "button-mode-2",
+          "type": "n",
+          "logic": "increment",
+          "offset": 1
+        },
+        {
+          "state": "button-mode-3",
+          "type": "n",
+          "logic": "increment",
+          "offset": 1
+        }
+      ]
+    }
+  ],
+  "onStart": [
+    {
+      "state": "Source-icon-0",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Source-icon-1",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Source-icon-2",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Source-icon-3",
+      "type": "s",
+      "value": "fab fa-playstation"
+    },
+    {
+      "state": "Source-icon-4",
+      "type": "s",
+      "value": "fab fa-playstation"
+    },
+    {
+      "state": "Source-icon-5",
+      "type": "s",
+      "value": "fab fa-playstation"
+    },
+    {
+      "state": "Source-icon-6",
+      "type": "s",
+      "value": "fas fa-microphone"
+    },
+    {
+      "state": "Source-icon-7",
+      "type": "s",
+      "value": "fab fa-youtube"
+    },
+    {
+      "state": "Source-icon-8",
+      "type": "s",
+      "value": "fas fa-audio-description"
+    },
+    {
+      "state": "Source-icon-9",
+      "type": "s",
+      "value": "fas fa-film"
+    },
+    {
+      "state": "Volume-icon-0",
+      "type": "s",
+      "value": "fas fa-volume-xmark"
+    }
+    ,
+    {
+      "state": "Volume-icon-1",
+      "type": "s",
+      "value": "fas fa-volume-low"
+    }
+    ,
+    {
+      "state": "Volume-icon-2",
+      "type": "s",
+      "value": "fas fa-volume-high"
+    }
+    ,
+    {
+      "state": "Volume-label-0",
+      "type": "s",
+      "value": "Mute"
+    }
+    ,
+    {
+      "state": "Volume-label-1",
+      "type": "s",
+      "value": "Volume Down"
+    }
+    ,
+    {
+      "state": "Volume-label-2",
+      "type": "s",
+      "value": "Volume Up"
+    },
+    {
+      "state": "Source-Label-0",
+      "type": "s",
+      "value": "DTV-1"
+    },
+    {
+      "state": "Source-Label-1",
+      "type": "s",
+      "value": "DTV-2"
+    },
+    {
+      "state": "Source-Label-2",
+      "type": "s",
+      "value": "DTV 3"
+    },
+    {
+      "state": "Source-Label-3",
+      "type": "s",
+      "value": "Blue Ray-1"
+    },
+    {
+      "state": "Source-Label-4",
+      "type": "s",
+      "value": "Blue Ray-2"
+    },
+    {
+      "state": "Source-Label-5",
+      "type": "s",
+      "value": "Blue Ray-3"
+    },
+    {
+      "state": "Source-Label-6",
+      "type": "s",
+      "value": "MIC"
+    },
+    {
+      "state": "Source-Label-7",
+      "type": "s",
+      "value": "BMN"
+    },
+    {
+      "state": "Source-Label-8",
+      "type": "s",
+      "value": "XLR WP"
+    },
+    {
+      "state": "Source-Label-9",
+      "type": "s",
+      "value": "HDMI WP"
+    },
+    {
+      "state": "Preset-Label-0",
+      "type": "s",
+      "value": "PRESET-1"
+    } ,
+    {
+      "state": "Preset-Label-1",
+      "type": "s",
+      "value": "PRESET-2"
+    } ,
+    {
+      "state": "Preset-Label-2",
+      "type": "s",
+      "value": "PRESET-3"
+    } ,
+    {
+      "state": "Preset-Label-3",
+      "type": "s",
+      "value": "PRESET-4"
+    } ,
+    {
+      "state": "Preset-Label-4",
+      "type": "s",
+      "value": "PRESET-5"
+    } ,
+    {
+      "state": "Preset-Label-5",
+      "type": "s",
+      "value": "RECALL"
+    } 
+  ]
 }

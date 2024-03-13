@@ -1,12 +1,53 @@
 /*!************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/audiopage/audiopage.scss ***!
   \************************************************************************************************************************************************/
+#audiopage-page .audio__source-container,
+#audiopage-page .audio__zone-button-container,
+#audiopage-page .audio__menu-list {
+  border: 1px solid hsl(0deg, 36%, 44%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+#audiopage-page .audio__source-container .ch5-button--icon {
+  font-size: 30px;
+  opacity: 1;
+  padding-right: 10px;
+}
+#audiopage-page .audio__source-container .ch5-button--pressed {
+  color: #f0fff0;
+  background-color: rgba(88, 112, 128, 0.7725490196);
+  border-color: #0091ea;
+}
 #audiopage-page .audio__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 100%;
+}
+#audiopage-page .audio__zone-button-container {
+  max-height: 800px;
+}
+#audiopage-page .audio__menu-list {
+  display: block;
+  max-height: 800px;
+}
+#audiopage-page .audio__source-container {
+  min-width: 100%;
+  min-height: 180px;
+}
+#audiopage-page .audio__source-container .audio__source-list {
+  justify-content: center;
+  align-items: center;
+}
+#audiopage-page .audio__source-container .audio__controls {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 /*!************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/lightpage/lightpage.scss ***!
@@ -17,18 +58,22 @@
   align-items: center;
 }
 #lightpage-page .lightControls {
-  border: 1px solid hsl(0deg, 0%, 80%);
+  border: 1px solid hsl(0deg, 6%, 83%);
   border-radius: 10px;
   box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
-  padding: auto;
   display: flex;
   justify-content: center;
-  height: 670px;
+  max-height: 890px;
 }
 #lightpage-page .light__scenecontainer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-height: 800px) {
+  #lightpage-page .lightControls {
+    max-height: 670px;
+  }
 }
 /*!**********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/mainpage/mainpage.scss ***!
@@ -130,16 +175,127 @@
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/shadespage/shadespage.scss ***!
   \**************************************************************************************************************************************************/
+#shadespage-page ch5-jointotext-numeric {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  border: solid 1px dimgray;
+}
 #shadespage-page .shades__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/signin/signin.scss ***!
+  \******************************************************************************************************************************************/
+#signin-page {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
   height: 100%;
+}
+#signin-page .form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+#signin-page .form-signin .checkbox {
+  font-weight: 400;
+}
+#signin-page .form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+#signin-page .form-signin input[type=email] {
+  margin-bottom: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#signin-page .form-signin input[type=password] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 /*!************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/videopage/videopage.scss ***!
   \************************************************************************************************************************************************/
+#videopage-page .tv__listButtonSection,
+#videopage-page .tv__listSection {
+  border: 1px solid hsl(0deg, 36%, 44%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  justify-content: center;
+}
+#videopage-page .tv__listSection {
+  max-height: 810px;
+}
+#videopage-page .ch5-button--icon {
+  font-size: 30px;
+  opacity: 1;
+  padding-right: 10px;
+}
+#videopage-page .ch5-button--pressed {
+  color: rgb(121, 160, 118);
+}
+#videopage-page .ch5-button--pressed .ch5-button--icon {
+  color: rgb(0, 255, 76);
+  font-size: 25px;
+}
+#videopage-page .b-red {
+  border: 3px solid #004A80;
+}
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/audiocontrols/audiocontrols.scss ***!
+  \**********************************************************************************************************************************************************/
+.audiocontrols-widget {
+  background: rgba(255, 255, 255, 0.777);
+  border: 1px solid hsl(0deg, 36%, 44%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  padding: 10px;
+  gap: 5px;
+  max-width: 375px;
+}
+.audiocontrols-widget .audio_zone-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px;
+  align-items: center;
+}
+.audiocontrols-widget ch5-button {
+  max-width: 90px;
+}
+.audiocontrols-widget .ch5-button--icon {
+  font-size: 23px;
+  color: #08090c;
+}
+.audiocontrols-widget .ch5-button-list-button-icon {
+  font-size: 23px;
+  color: #08090c;
+}
+.audiocontrols-widget ch5-jointotext-string {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/circulebuttons/circulebuttons.scss ***!
+  \************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/dpadcontrol/dpadcontrol.scss ***!
+  \******************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/keypadcontrol/keypadcontrol.scss ***!
+  \**********************************************************************************************************************************************************/
 
 /*!********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/lightcontrolwidget/lightcontrolwidget.scss ***!
@@ -158,12 +314,13 @@
   margin: 5px;
   color: hsl(0deg, 0%, 20%);
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
-.lightcontrolwidget-widget .lightCardTitle .ch5-jointotext-string {
+.lightcontrolwidget-widget .lightCardTitle ch5-jointotext-string {
+  padding: 5px;
   font-family: sans-serif;
   font-size: 14px;
+  font-weight: bold;
 }
 .lightcontrolwidget-widget .lightCardSlider {
   margin-left: 5px;
@@ -173,21 +330,57 @@
   color: #e8a910;
   font-size: 16px;
 }
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider > div .noUi-base .noUi-target {
-  border-radius: 0px;
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider > div .ch5-slider .noUi-target {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
 }
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-handle {
-  background-color: #3c7440;
-  border: 0px;
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-connects, .lightcontrolwidget-widget .lightCardSlider .noUi-base {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+}
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-connects {
+  height: 2px;
+  border: none;
+  inset: 2px;
+}
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-base {
+  height: 2px;
+  background-image: repeating-linear-gradient(to bottom, black 0%, black 50%, transparent 50% transparent 100%);
+  border: none;
+  border-bottom: 5px dotted rgb(155, 146, 141);
+  color: #fff;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-target {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: #080e07;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.lightcontrolwidget-widget .lightCardSlider .ch5-slider--size--small .noUi-handle {
+  border: none;
   border-radius: 50%;
+  top: -18px;
   width: 30px;
-  height: 30px;
+  background-image: url(../.././app/template/assets/img/light-bulb-svgrepo-com.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in-out;
 }
 .lightcontrolwidget-widget .lightCardSlider .lightCardButton {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .lightcontrolwidget-widget .lightCardButton {
   margin: 5px;
@@ -227,7 +420,7 @@
   height: 40px;
   width: 145px;
   border-radius: 10px 10px 0px 0px;
-  background: rgba(137, 43, 226, 0.889);
+  background: #e0dace;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +429,7 @@
 }
 .lightquicklanchwidget-widget .scene__header h5 {
   font-size: 20px;
-  color: aliceblue;
+  color: black;
   font-weight: bold;
 }
 .lightquicklanchwidget-widget .light__scenebuttonlist {
@@ -248,15 +441,8 @@
   align-items: center;
 }
 .lightquicklanchwidget-widget .light__scenebuttonlist ch5-button {
+  margin: 5px;
   min-width: fit-content;
-}
-.lightquicklanchwidget-widget .filter__button {
-  margin: 2px;
-  height: 35px;
-  color: rgb(8, 8, 8);
-  border: 0px 2px 0px 0px;
-  align-items: center;
-  border-color: blueviolet;
 }
 /*!****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/lightscenewidget/lightscenewidget.scss ***!
@@ -276,16 +462,16 @@
   height: 40px;
   width: 145px;
   border-radius: 10px 10px 0px 0px;
-  background: rgba(137, 43, 226, 0.889);
+  background: #e0dace;
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  align-items: center;
   z-index: -1;
 }
 .lightscenewidget-widget .scene__header h5 {
   font-size: 20px;
-  color: aliceblue;
+  color: black;
   font-weight: bold;
 }
 .lightscenewidget-widget .light__scenebuttonlist {
@@ -316,3 +502,31 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/projectheader/projectheader.scss ***!
   \**********************************************************************************************************************************************************/
 
+/*!****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/sourcecommandscontrols/sourcecommandscontrols.scss ***!
+  \****************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/sourcelist/sourcelist.scss ***!
+  \****************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/tvcontrols/tvcontrols.scss ***!
+  \****************************************************************************************************************************************************/
+.tv__container {
+  background: rgba(255, 255, 255, 0.777);
+  border: 1px solid hsl(0deg, 36%, 44%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-height: 125px;
+  max-width: 350px;
+}
+.tv__container ch5-jointotext-string {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+}

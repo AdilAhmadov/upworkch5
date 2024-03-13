@@ -14,7 +14,10 @@
 const settingspageModule = (() => {
     'use strict';
 
-    // BEGIN::CHANGEAREA - your javascript for page module code goes here         
+    function getTriggerBtnObject(displayIndex) {
+        const blurayMenuBlankBtn = document.getElementById('blurayMenuBlankBtn_' + displayIndex);
+        return blurayMenuBlankBtn;
+    }
 
     /**
      * Initialize Method
@@ -42,6 +45,7 @@ const settingspageModule = (() => {
      * All public method and properties are exported here
      */
     return {
+        getTriggerBtnObject
     };
 
     // END::CHANGEAREA
