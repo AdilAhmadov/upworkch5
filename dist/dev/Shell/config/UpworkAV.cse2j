@@ -1,6 +1,6 @@
 {
 	"name": "UpworkAV",
-	"timestamp": "2024-03-13 23:52:03.862",
+	"timestamp": "2024-03-14 23:52:34.559",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "",
@@ -284,42 +284,6 @@
 				"1": {
 					"1": "Audio.ListSize"
 				},
-				"2": {
-					"1": "Audio.ControlList[0].ZoneVolumeValue"
-				},
-				"3": {
-					"1": "Audio.ControlList[1].ZoneVolumeValue"
-				},
-				"4": {
-					"1": "Audio.ControlList[2].ZoneVolumeValue"
-				},
-				"5": {
-					"1": "Audio.ControlList[3].ZoneVolumeValue"
-				},
-				"6": {
-					"1": "Audio.ControlList[4].ZoneVolumeValue"
-				},
-				"7": {
-					"1": "Audio.ControlList[5].ZoneVolumeValue"
-				},
-				"8": {
-					"1": "Audio.ControlList[6].ZoneVolumeValue"
-				},
-				"9": {
-					"1": "Audio.ControlList[7].ZoneVolumeValue"
-				},
-				"10": {
-					"1": "Audio.ControlList[8].ZoneVolumeValue"
-				},
-				"11": {
-					"1": "Audio.ControlList[9].ZoneVolumeValue"
-				},
-				"12": {
-					"1": "Audio.ControlList[10].ZoneVolumeValue"
-				},
-				"13": {
-					"1": "Audio.ControlList[11].ZoneVolumeValue"
-				},
 				"14": {
 					"1": "Video.VideoControlListSize"
 				},
@@ -477,63 +441,75 @@
 			"string": {
 				"2": {
 					"1": "Audio.ControlList[0].ZoneLabel",
-					"2": "Audio.ControlList[0].SelectedSourceLabel",
-					"3": "Audio.ControlList[0].SelectedSourceIconClass"
+					"2": "Audio.ControlList[0].ZoneVolumeValue",
+					"3": "Audio.ControlList[0].SelectedSourceLabel",
+					"4": "Audio.ControlList[0].SelectedSourceIconClass"
 				},
 				"3": {
 					"1": "Audio.ControlList[1].ZoneLabel",
-					"2": "Audio.ControlList[1].SelectedSourceLabel",
-					"3": "Audio.ControlList[1].SelectedSourceIconClass"
+					"2": "Audio.ControlList[1].ZoneVolumeValue",
+					"3": "Audio.ControlList[1].SelectedSourceLabel",
+					"4": "Audio.ControlList[1].SelectedSourceIconClass"
 				},
 				"4": {
 					"1": "Audio.ControlList[2].ZoneLabel",
-					"2": "Audio.ControlList[2].SelectedSourceLabel",
-					"3": "Audio.ControlList[2].SelectedSourceIconClass"
+					"2": "Audio.ControlList[2].ZoneVolumeValue",
+					"3": "Audio.ControlList[2].SelectedSourceLabel",
+					"4": "Audio.ControlList[2].SelectedSourceIconClass"
 				},
 				"5": {
 					"1": "Audio.ControlList[3].ZoneLabel",
-					"2": "Audio.ControlList[3].SelectedSourceLabel",
-					"3": "Audio.ControlList[3].SelectedSourceIconClass"
+					"2": "Audio.ControlList[3].ZoneVolumeValue",
+					"3": "Audio.ControlList[3].SelectedSourceLabel",
+					"4": "Audio.ControlList[3].SelectedSourceIconClass"
 				},
 				"6": {
 					"1": "Audio.ControlList[4].ZoneLabel",
-					"2": "Audio.ControlList[4].SelectedSourceLabel",
-					"3": "Audio.ControlList[4].SelectedSourceIconClass"
+					"2": "Audio.ControlList[4].ZoneVolumeValue",
+					"3": "Audio.ControlList[4].SelectedSourceLabel",
+					"4": "Audio.ControlList[4].SelectedSourceIconClass"
 				},
 				"7": {
 					"1": "Audio.ControlList[5].ZoneLabel",
-					"2": "Audio.ControlList[5].SelectedSourceLabel",
-					"3": "Audio.ControlList[5].SelectedSourceIconClass"
+					"2": "Audio.ControlList[5].ZoneVolumeValue",
+					"3": "Audio.ControlList[5].SelectedSourceLabel",
+					"4": "Audio.ControlList[5].SelectedSourceIconClass"
 				},
 				"8": {
 					"1": "Audio.ControlList[6].ZoneLabel",
-					"2": "Audio.ControlList[6].SelectedSourceLabel",
-					"3": "Audio.ControlList[6].SelectedSourceIconClass"
+					"2": "Audio.ControlList[6].ZoneVolumeValue",
+					"3": "Audio.ControlList[6].SelectedSourceLabel",
+					"4": "Audio.ControlList[6].SelectedSourceIconClass"
 				},
 				"9": {
 					"1": "Audio.ControlList[7].ZoneLabel",
-					"2": "Audio.ControlList[7].SelectedSourceLabel",
-					"3": "Audio.ControlList[7].SelectedSourceIconClass"
+					"2": "Audio.ControlList[7].ZoneVolumeValue",
+					"3": "Audio.ControlList[7].SelectedSourceLabel",
+					"4": "Audio.ControlList[7].SelectedSourceIconClass"
 				},
 				"10": {
 					"1": "Audio.ControlList[8].ZoneLabel",
-					"2": "Audio.ControlList[8].SelectedSourceLabel",
-					"3": "Audio.ControlList[8].SelectedSourceIconClass"
+					"2": "Audio.ControlList[8].ZoneVolumeValue",
+					"3": "Audio.ControlList[8].SelectedSourceLabel",
+					"4": "Audio.ControlList[8].SelectedSourceIconClass"
 				},
 				"11": {
 					"1": "Audio.ControlList[9].ZoneLabel",
-					"2": "Audio.ControlList[9].SelectedSourceLabel",
-					"3": "Audio.ControlList[9].SelectedSourceIconClass"
+					"2": "Audio.ControlList[9].ZoneVolumeValue",
+					"3": "Audio.ControlList[9].SelectedSourceLabel",
+					"4": "Audio.ControlList[9].SelectedSourceIconClass"
 				},
 				"12": {
 					"1": "Audio.ControlList[10].ZoneLabel",
-					"2": "Audio.ControlList[10].SelectedSourceLabel",
-					"3": "Audio.ControlList[10].SelectedSourceIconClass"
+					"2": "Audio.ControlList[10].ZoneVolumeValue",
+					"3": "Audio.ControlList[10].SelectedSourceLabel",
+					"4": "Audio.ControlList[10].SelectedSourceIconClass"
 				},
 				"13": {
 					"1": "Audio.ControlList[11].ZoneLabel",
-					"2": "Audio.ControlList[11].SelectedSourceLabel",
-					"3": "Audio.ControlList[11].SelectedSourceIconClass"
+					"2": "Audio.ControlList[11].ZoneVolumeValue",
+					"3": "Audio.ControlList[11].SelectedSourceLabel",
+					"4": "Audio.ControlList[11].SelectedSourceIconClass"
 				},
 				"15": {
 					"1": "Video.ControlLists[0].VideoZoneLabelState",

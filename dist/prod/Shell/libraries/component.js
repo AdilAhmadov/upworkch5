@@ -2660,7 +2660,10 @@ const shadespageModule = (() => {
 const signinModule = (() => {
     'use strict';
 
-    // BEGIN::CHANGEAREA - your javascript for page module code goes here         
+    var elem = document.getElementById("demo");
+    elem.addEventListener('slider', function(e){
+        console.log('Change event via JavaScript with event details: ', e.detail);
+    });
 
     /**
      * Initialize Method
@@ -2688,6 +2691,7 @@ const signinModule = (() => {
      * All public method and properties are exported here
      */
     return {
+        elem
     };
 
     // END::CHANGEAREA
