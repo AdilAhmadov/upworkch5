@@ -6,14 +6,13 @@
     <div class="audio__menu-list">
       <ch5-subpage-reference-list
         widgetid="audiocontrols-widget"
-        orientation="horizontal"
+        orientation="vertical"
         numberofitems="12"
-        rows="3"
         columns="4"
         scrollbar="false"
         centerItems="true"
         endless="false"
-        indexid="idx">
+        indexid="idx" loaditems="all">
       </ch5-subpage-reference-list>
     </div>    
     <br />
@@ -30,20 +29,18 @@
           scrollbar="false"
           centerItems="true"
           endless="false"
-          numberOfItems="10"
-          rows="1"
-          columns="1"
+          numberOfItems="11"
           indexId="idx"
           buttonType="success"
           buttonHAlignLabel="center"
           buttonVAlignLabel="middle"
           buttonIconPosition="first"
           buttonShape="rounded-rectangle"          
-          buttonReceiveStateSelected="Source-selected-{{idx}}"
-          buttonReceiveStateIconClass="Source-icon-{{idx}}"
-          buttonreceivestatelabel="Source-Label-{{idx}}"
-          buttonSendEventOnClick="Source-click-{{idx}}"
-          contractName=""
+          buttonReceiveStateSelected="Audio.SourceList[{{idx}}].SelectedState"
+          buttonReceiveStateIconClass="Audio.SourceList[{{idx}}].IconClass"
+          buttonreceivestatelabel="Audio.SourceList[{{idx}}].Name"
+          buttonSendEventOnClick="Audio.SourceList[{{idx}}].Selection"
+          contractName="Contract"
           stretch="both"
           contractItemLabelType="none"
           useContractForEachButtonSelection="false"
@@ -74,7 +71,10 @@
             indexId="idx"
             loadItems="visible-only"
             scrollToPosition="0"
-            buttonreceivestatelabel="Preset-Label-{{idx}}">       
+            buttonReceiveStateSelected="Audio.PresetList[{{idx}}].SelectedState"
+            buttonReceiveStateIconClass="Audio.PresetList[{{idx}}].IconClass"
+            buttonreceivestatelabel="Audio.PresetList[{{idx}}].Name"
+            buttonSendEventOnClick="Audio.PresetList[{{idx}}].Selection">       
         </div>
         <!--Audio Ducker Control-->
         <div class="col-2">
@@ -83,8 +83,10 @@
             label="DUCKER"
             Type="success"
             stretch="both"
-            receivestateselected="btn_id_selected"
-            sendeventonclick="btn_id_clicked"           >
+            receivestateselected="Audio.Ducker.SelectedState"
+            sendeventonclick="Audio.DuckerButton.Press_Event"
+            receivestateiconclass="Audio.Ducker.IconClass"
+            receivestatelabel="Audio.Ducker.Name">
           </ch5-button>
         </div>
 
@@ -99,10 +101,12 @@
             centeritems="true"
             stretch="both"
             buttontype="info"
-            buttonreceivestatelabel="Volume-label-{{idx}}"
             rows="1"
             buttonShape="rounded-rectangle"
-            buttonReceiveStateIconClass="Volume-icon-{{idx}}"
+            buttonReceiveStateIconClass="Audio.VolumeList[{{idx}}].IconClas"
+            buttonReceiveStateSelected="Audio.VolumeList[{{idx}}].SelectedState"           
+            buttonreceivestatelabel="Audio.VolumeList[{{idx}}].Name"
+            buttonSendEventOnClick="Audio.VolumeList[{{idx}}].Selection"
             columns="1"
             indexId="idx"
             loadItems="visible-only"
@@ -111,6 +115,9 @@
       </div>
     </div>
 </div>
+<!--
+
+
 <div>
   <ch5-modal-dialog receivestateshowpulse="Audio_Zone.Contract.Modal" closable="true">
       <p>Source Selection</p>
@@ -134,7 +141,7 @@
       </div>        
   </ch5-modal-dialog>
 </div>
-   
+   -->
   <!--
     <div>
         <ch5-template templateId="pagedisplay-widget" context="NAME:AUDIO"></ch5-template>

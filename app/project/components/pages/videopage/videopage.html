@@ -4,83 +4,73 @@
 
 <section id="videopage-page" class="details-container" aria-labelledby="Videopage">
 
-    <template id="TV__power_list-widget">
-        <div class="tv__power-warpper">
-            <div class="tv__power-header"> <!--receivestatevalue="TvPowerList.Contact[{{idx}}].label"-->
-                <ch5-jointotext-string value="Display"  > </ch5-jointotext-string>                 
-            </div>
-            <div class="tv__power-content">
-                <ch5-button 
-                iconclass = "fas fa-power-off"
-                
-                sendEventOnClick="TvPowerList.Contact[{{idx}}].click"
-                receiveStateSelected="TvPowerList.Contact[{{idx}}].selected" ></ch5-button>
-            </div>
-            
-        </div>
-        
-    </template>
-    
 <div class="container-fluid">
         <div class="row gap-2">
             <div class="col-11 tv__listSection">
-                <ch5-subpage-reference-list
-                    widgetid="tvcontrols-widget" orientation="vertical" columns="5" numberofitems="50" endless="false" centeritems="true" scrollbar="false"  
-                    indexid="{{idx}}"  >
+                <ch5-subpage-reference-list id="VideoZoneControlList"
+                    widgetid="tvcontrols-widget" orientation="vertical" columns="5" numberofitems="50" scrollbar="false" loaditems="all"
+                    indexid="idx2">
                 </ch5-subpage-reference-list>
             </div>
             <!--Video Preset Control-->
         <div class="col tv__listButtonSection ">
-            <div class="bg-light bg-gradient mh-25" ></div>
-            <ch5-button-list
-              id="ch5-button-list_id"
+            <div class="row">
+                <div class="bg-light bg-gradient mh-25" ><p>Controls</p></div>
+            </div>
+            <div class="row">
+                <ch5-button-list
+              id="VideoPresetList"
               orientation="vertical"
               scrollbar="false"
               buttontype="default"
               endless="false"
-              numberOfItems="6"
-              rows="1"
+              numberOfItems="6"         
               buttonShape="rounded-rectangle"            
               centeritems="false"
+              contractname="Contract"
+              indexId="idx2"
+              loadItems="all"
+              buttonReceiveStateSelected="Video.PresetList[{{idx2}}].SelectedState"
+              buttonReceiveStateIconClass="Video.PresetList[{{idx2}}].IconClass"
+              buttonreceivestatelabel="Video.PresetList[{{idx2}}].Name"
+              buttonSendEventOnClick="Video.PresetList[{{idx2}}].Selection">
+            </div>
+            <br/>
+              <div class="row displayPower">               
+                <ch5-button id="displayPowerAll"
+                label="Power"
+                iconclass="fas fa-power-off"
+                size="large"
+                sendeventonclick="btn_id_clicked" type="warning">
+            </ch5-button>
+              </div>
               
-              columns="1"
-              indexId="idx"
-              loadItems="visible-only"
-              scrollToPosition="0"
-              buttonreceivestatelabel="Preset-Label-{{idx}}">       
           </div>
-        </div>
-
-       
+         
+        </div>      
 
     <div class="row mt-2 tv__listButtonSection">  
         <div class="col-12">
           <ch5-button-list
-          id="ch5-button-list_id"
-          orientation="horizontal"
-          scrollbar="false"
-          centerItems="true"
-          endless="false"
-          numberOfItems="10"
-          indexId="idx"
-          buttonType="success"
-          buttonHAlignLabel="center"
-          buttonVAlignLabel="middle"
-          buttonIconPosition="first"
-          buttonShape="rounded-rectangle"          
-          buttonReceiveStateSelected="Source-selected-{{idx}}"
-          buttonReceiveStateIconClass="Source-icon-{{idx}}"
-          buttonreceivestatelabel="Source-Label-{{idx}}"
-          buttonSendEventOnClick="Source-click-{{idx}}"
-          contractName=""
-          stretch="both"
-          contractItemLabelType="none"
-          useContractForEachButtonSelection="false"
-          buttonReceiveStateSGIconNumeric=""
-          buttonReceiveStateSGIconString=""
-          buttonSgIconTheme="icons-lg"
-          loadItems="visible-only"
-          clickHoldTime="1500">
+            id="VideoSourceList"
+            orientation="horizontal"
+            scrollbar="false"
+            centerItems="true"
+            endless="false"
+            numberOfItems="11"
+            indexId="idx2"
+            buttonType="success"
+            buttonHAlignLabel="center"
+            buttonVAlignLabel="middle"
+            buttonIconPosition="first"
+            buttonShape="rounded-rectangle"          
+            buttonReceiveStateSelected="Video.SourceList[{{idx2}}].SelectedState"
+            buttonReceiveStateIconClass="Video.SourceList[{{idx2}}].IconClass"
+            buttonreceivestatelabel="Video.SourceList[{{idx2}}].Name"
+            buttonSendEventOnClick="Video.SourceList[{{idx2}}].Selection"
+            stretch="both"         
+            loadItems="visible-only"
+            clickHoldTime="1500">
         </ch5-button-list>
         </div>     
       </div>

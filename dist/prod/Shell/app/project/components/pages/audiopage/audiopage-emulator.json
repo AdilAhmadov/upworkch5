@@ -32,171 +32,583 @@
       ]
     }
   ],
-  "onStart": [
+  "onStart": [  
     {
-      "state": "Source-icon-0",
+      "state": "Audio.ZoneList[0].ZoneLabel",
+      "type": "s",
+      "value": "CONCOURSE"
+    },
+    {
+      "state": "Audio.ZoneList[1].ZoneLabel",
+      "type": "s",
+      "value": "ARCADE"
+    },
+    {
+      "state": "Audio.ZoneList[2].ZoneLabel",
+      "type": "s",
+      "value": "BAR"
+    },
+    {
+      "state": "Audio.ZoneList[3].ZoneLabel",
+      "type": "s",
+      "value": "FRONT Desk"
+    },
+    {
+      "state": "Audio.ZoneList[4].ZoneLabel",
+      "type": "s",
+      "value": "ENTRANCE"
+    },
+    {
+      "state": "Audio.ZoneList[5].ZoneLabel",
+      "type": "s",
+      "value": "REST ROOMS"
+    },
+    {
+      "state": "Audio.ZoneList[6].ZoneLabel",
+      "type": "s",
+      "value": "ZONE-1"
+    },
+    {
+      "state": "Audio.ZoneList[7].ZoneLabel",
+      "type": "s",
+      "value": "ZONE-2"
+    },
+    {
+      "state": "Audio.ZoneList[8].ZoneLabel",
+      "type": "s",
+      "value": "ZONE-3"
+    },
+    {
+      "state": "Audio.ZoneList[9].ZoneLabel",
+      "type": "s",
+      "value": "ZONE-4"
+    },
+    {
+      "state": "Audio.ZoneList[10].ZoneLabel",
+      "type": "s",
+      "value": "ZONE-5"
+    }, 
+    {
+      "state": "Audio.ZoneList[11].ZoneLabel",
+      "type": "s",
+      "value": "ZONE-6"
+    },
+    {
+      "state": "Audio.ZoneList[0].ZoneVolumeValue",
+      "type": "s",
+      "value": "50 %"
+    },
+    {
+      "state": "Audio.ZoneList[1].ZoneVolumeValue",
+      "type": "s",
+      "value": "68 %"
+    } ,
+    {
+      "state": "Audio.ZoneList[2].ZoneVolumeValue",
+      "type": "s",
+      "value": "70 %"
+    } ,
+    {
+      "state": "Audio.ZoneList[3].ZoneVolumeValue",
+      "type": "s",
+      "value": "96 %"
+    } ,
+    {
+      "state": "Audio.ZoneList[4].ZoneVolumeValue",
+      "type": "s",
+      "value": "100 %"
+    } ,
+    {
+      "state": "Audio.ZoneList[5].ZoneVolumeValue",
+      "type": "s",
+      "value": "25 %"
+    } ,
+    {
+      "state": "Audio.ZoneList[6].ZoneVolumeValue",
+      "type": "s",
+      "value": "27 %"
+    } ,
+    {
+      "state": "Audio.ZoneList[7].ZoneVolumeValue",
+      "type": "s",
+      "value": "63 %"
+    },
+    {
+      "state": "Audio.ZoneList[8].ZoneVolumeValue",
+      "type": "s",
+      "value": "12 %"
+    },
+    {
+      "state": "Audio.ZoneList[9].ZoneVolumeValue",
+      "type": "s",
+      "value": "33 %"
+    },
+    {
+      "state": "Audio.ZoneList[10].ZoneVolumeValue",
+      "type": "s",
+      "value": "74 %"
+    },
+    {
+      "state": "Audio.ZoneList[11].ZoneVolumeValue",
+      "type": "s",
+      "value": "45 %"
+    },
+    {
+      "state": "Audio.ZoneList[0].SelectedSourceLabel",
+      "type": "s",
+      "value": "DTV-1"
+    },
+    {
+      "state": "Audio.ZoneList[1].SelectedSourceLabel",
+      "type": "s",
+      "value": "DTV-2"
+    },
+    {
+      "state": "Audio.ZoneList[2].SelectedSourceLabel",
+      "type": "s",
+      "value": "DTV-3"
+    },
+    {
+      "state": "Audio.ZoneList[3].SelectedSourceLabel",
+      "type": "s",
+      "value": "BlueRay-1"
+    },
+    {
+      "state": "Audio.ZoneList[4].SelectedSourceLabel",
+      "type": "s",
+      "value": "BlueRay-2"
+    },
+    {
+      "state": "Audio.ZoneList[5].SelectedSourceLabel",
+      "type": "s",
+      "value": "BlueRay-3"
+    },
+    {
+      "state": "Audio.ZoneList[6].SelectedSourceLabel",
+      "type": "s",
+      "value": "Microphone"
+    } ,
+    {
+      "state": "Audio.ZoneList[7].SelectedSourceLabel",
+      "type": "s",
+      "value": "BMN Source"
+    } ,
+    {
+      "state": "Audio.ZoneList[8].SelectedSourceLabel",
+      "type": "s",
+      "value": "XLR Wallplate"
+    } 
+    ,
+    {
+      "state": "Audio.ZoneList[9].SelectedSourceLabel",
+      "type": "s",
+      "value": "HDMI Wallplate"
+    } ,
+    {
+      "state": "Audio.ZoneList[10].SelectedSourceLabel",
+      "type": "s",
+      "value": "HDMI Wallplate"
+    } ,
+    {
+      "state": "Audio.ZoneList[11].SelectedSourceLabel",
+      "type": "s",
+      "value": "HDMI Wallplate"
+    },
+    {
+      "state": "Audio.SourceList[0].IconClass",
       "type": "s",
       "value": "fas fa-tv"
     },
     {
-      "state": "Source-icon-1",
+      "state": "Audio.SourceList[1].IconClass",
       "type": "s",
       "value": "fas fa-tv"
     },
     {
-      "state": "Source-icon-2",
+      "state": "Audio.SourceList[2].IconClass",
       "type": "s",
       "value": "fas fa-tv"
     },
     {
-      "state": "Source-icon-3",
+      "state": "Audio.SourceList[3].IconClass",
       "type": "s",
       "value": "fab fa-playstation"
     },
     {
-      "state": "Source-icon-4",
+      "state": "Audio.SourceList[4].IconClass",
       "type": "s",
       "value": "fab fa-playstation"
     },
     {
-      "state": "Source-icon-5",
+      "state": "Audio.SourceList[5].IconClass",
       "type": "s",
       "value": "fab fa-playstation"
     },
     {
-      "state": "Source-icon-6",
+      "state": "Audio.SourceList[6].IconClass",
       "type": "s",
       "value": "fas fa-microphone"
     },
     {
-      "state": "Source-icon-7",
+      "state": "Audio.SourceList[7].IconClass",
       "type": "s",
       "value": "fab fa-youtube"
     },
     {
-      "state": "Source-icon-8",
+      "state": "Audio.SourceList[8].IconClass",
       "type": "s",
       "value": "fas fa-audio-description"
     },
     {
-      "state": "Source-icon-9",
+      "state": "Audio.SourceList[9].IconClass",
       "type": "s",
       "value": "fas fa-film"
     },
     {
-      "state": "Volume-icon-0",
+      "state": "Audio.VolumeList[0].IconClas",
       "type": "s",
       "value": "fas fa-volume-xmark"
     }
     ,
     {
-      "state": "Volume-icon-1",
+      "state": "Audio.VolumeList[1].IconClas",
       "type": "s",
       "value": "fas fa-volume-low"
     }
     ,
     {
-      "state": "Volume-icon-2",
+      "state": "Audio.VolumeList[2].IconClas",
       "type": "s",
       "value": "fas fa-volume-high"
     }
     ,
     {
-      "state": "Volume-label-0",
+      "state": "Audio.VolumeList[0].Name",
       "type": "s",
       "value": "Mute"
     }
     ,
     {
-      "state": "Volume-label-1",
+      "state": "Audio.VolumeList[1].Name",
       "type": "s",
       "value": "Volume Down"
     }
     ,
     {
-      "state": "Volume-label-2",
+      "state": "Audio.VolumeList[2].Name",
       "type": "s",
       "value": "Volume Up"
     },
     {
-      "state": "Source-Label-0",
+      "state": "Audio.Ducker.Name",
+      "type": "s",
+      "value": "DUCKER"
+    },
+    {
+      "state": "Audio.SourceList[0].Name",
       "type": "s",
       "value": "DTV-1"
     },
     {
-      "state": "Source-Label-1",
+      "state": "Audio.SourceList[1].Name",
       "type": "s",
       "value": "DTV-2"
     },
     {
-      "state": "Source-Label-2",
+      "state": "Audio.SourceList[2].Name",
       "type": "s",
       "value": "DTV 3"
     },
     {
-      "state": "Source-Label-3",
+      "state": "Audio.SourceList[3].Name",
       "type": "s",
       "value": "Blue Ray-1"
     },
     {
-      "state": "Source-Label-4",
+      "state": "Audio.SourceList[4].Name",
       "type": "s",
       "value": "Blue Ray-2"
     },
     {
-      "state": "Source-Label-5",
+      "state": "Audio.SourceList[5].Name",
       "type": "s",
       "value": "Blue Ray-3"
     },
     {
-      "state": "Source-Label-6",
+      "state": "Audio.SourceList[6].Name",
       "type": "s",
       "value": "MIC"
     },
     {
-      "state": "Source-Label-7",
+      "state": "Audio.SourceList[7].Name",
       "type": "s",
       "value": "BMN"
     },
     {
-      "state": "Source-Label-8",
+      "state": "Audio.SourceList[8].Name",
       "type": "s",
       "value": "XLR WP"
     },
     {
-      "state": "Source-Label-9",
+      "state": "Audio.SourceList[9].Name",
       "type": "s",
       "value": "HDMI WP"
     },
     {
-      "state": "Preset-Label-0",
+      "state": "Audio.SourceList[10].Name",
+      "type": "s",
+      "value": "No Audio"
+    },
+    {
+      "state": "Audio.PresetList[0].Name",
       "type": "s",
       "value": "PRESET-1"
     } ,
     {
-      "state": "Preset-Label-1",
+      "state": "Audio.PresetList[1].Name",
       "type": "s",
       "value": "PRESET-2"
     } ,
     {
-      "state": "Preset-Label-2",
+      "state": "Audio.PresetList[2].Name",
       "type": "s",
       "value": "PRESET-3"
     } ,
     {
-      "state": "Preset-Label-3",
+      "state": "Audio.PresetList[3].Name",
       "type": "s",
       "value": "PRESET-4"
     } ,
     {
-      "state": "Preset-Label-4",
+      "state": "Audio.PresetList[4].Name",
       "type": "s",
       "value": "PRESET-5"
     } ,
     {
-      "state": "Preset-Label-5",
+      "state": "Audio.PresetList[5].Name",
       "type": "s",
       "value": "RECALL"
-    } 
+    }, {
+      "state": "Video.ZoneList[0].SelectedSourceIconClass",
+      "type": "s",
+      "value": "fab fa-accessible-icon"
+    },
+    {
+      "state": "Video.ZoneList[0].SelectedSourceName",
+      "type": "s",
+      "value": "Bar Display-1"
+    },
+    {
+      "state": "Video.PresetList[0].Name",
+      "type": "s",
+      "value": "PRESET-1"
+    },
+    {
+      "state": "Video.PresetList[1].Name",
+      "type": "s",
+      "value": "PRESET-2"
+    },
+    {
+      "state": "Video.PresetList[2].Name",
+      "type": "s",
+      "value": "PRESET-3"
+    },
+    {
+      "state": "Video.PresetList[3].Name",
+      "type": "s",
+      "value": "PRESET-4"
+    },
+    {
+      "state": "Video.PresetList[4].Name",
+      "type": "s",
+      "value": "PRESET-5"
+    },{
+      "state": "Video.PresetList[5].Name",
+      "type": "s",
+      "value": "RECALL"
+    },
+    {
+      "state": "Video.ZoneList[3].ZoneNameIconClass",
+      "type": "s",
+      "value": "fab fa-affiliatetheme"
+    }
+    ,
+    {
+      "state": "Video.ZoneList[0].ZoneNameIconClass",
+      "type": "s",
+      "value": "fab fa-affiliatetheme"
+    },
+
+    {
+      "state": "Video.ZoneList[0].ZoneName",
+      "type": "s",
+      "value": "Bar Display-1"
+    },{
+      "state": "Video.ZoneList[1].ZoneName",
+      "type": "s",
+      "value": "Bar Display-2"
+    },{
+      "state": "Video.ZoneList[2].ZoneName",
+      "type": "s",
+      "value": "Bar Display-3"
+    },{
+      "state": "Video.ZoneList[3].ZoneName",
+      "type": "s",
+      "value": "Bar Display-4"
+    },{
+      "state": "Video.ZoneList[4].ZoneName",
+      "type": "s",
+      "value": "Bar Display-5"
+    },{
+      "state": "Video.ZoneList[5].ZoneName",
+      "type": "s",
+      "value": "Bar Display-6"
+    },{
+      "state": "Video.ZoneList[6].ZoneName",
+      "type": "s",
+      "value": "Bar Display-7"
+    },{
+      "state": "Video.ZoneList[7].ZoneName",
+      "type": "s",
+      "value": "Bar Display-8"
+    },{
+      "state": "Video.ZoneList[8].ZoneName",
+      "type": "s",
+      "value": "Bar Display-9"
+    },{
+      "state": "Video.ZoneList[20].ZoneName",
+      "type": "s",
+      "value": "Bar Display-19"
+    },{
+      "state": "Video.ZoneList[25].ZoneName",
+      "type": "s",
+      "value": "Bar Display-26"
+    },{
+      "state": "Video.ZoneList[49].ZoneName",
+      "type": "s",
+      "value": "Bar Display-50"
+    },
+    {
+      "state": "Light.LightList[0].ZoneName",
+      "type": "s",
+      "value": "Light Zone-0"
+    },
+    {
+      "state": "Light.LightList[1].ZoneName",
+      "type": "s",
+      "value": "Light Zone-1"
+    },
+    {
+      "state": "Light.LightList[2].ZoneName",
+      "type": "s",
+      "value": "Light Zone-2"
+    },
+
+
+
+
+
+
+
+    
+    
+    {
+      "state": "Video.SourceList[0].IconClass",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Video.SourceList[1].IconClass",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Video.SourceList[2].IconClass",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Video.SourceList[3].IconClass",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Video.SourceList[4].IconClass",
+      "type": "s",
+      "value": "fab fa-playstation"
+    },
+    {
+      "state": "Video.SourceList[5].IconClass",
+      "type": "s",
+      "value": "fab fa-playstation"
+    },{
+      "state": "Video.SourceList[6].IconClass",
+      "type": "s",
+      "value": "fab fa-playstation"
+    },
+    {
+      "state": "Video.SourceList[7].IconClass",
+      "type": "s",
+      "value": "fas fa-voicemail"
+    },
+    {
+      "state": "Video.SourceList[8].IconClass",
+      "type": "s",
+      "value": "fas fa-film"
+    },
+    {
+      "state": "Video.SourceList[9].IconClass",
+      "type": "s",
+      "value": "fas fa-tv"
+    },
+    {
+      "state": "Video.SourceList[10].IconClass",
+      "type": "s",
+      "value": ""
+    },{
+      "state": "Video.SourceList[0].Name",
+      "type": "s",
+      "value": "DTV-1"
+    },{
+      "state": "Video.SourceList[1].Name",
+      "type": "s",
+      "value": "DTV-2"
+    },{
+      "state": "Video.SourceList[2].Name",
+      "type": "s",
+      "value": "DTV-3"
+    },{
+      "state": "Video.SourceList[3].Name",
+      "type": "s",
+      "value": "DTV-4"
+    },{
+      "state": "Video.SourceList[4].Name",
+      "type": "s",
+      "value": "BDP-1"
+    },{
+      "state": "Video.SourceList[5].Name",
+      "type": "s",
+      "value": "BDP-2"
+    },{
+      "state": "Video.SourceList[6].Name",
+      "type": "s",
+      "value": "BDP-3"
+    },{
+      "state": "Video.SourceList[7].Name",
+      "type": "s",
+      "value": "BMN"
+    },{
+      "state": "Video.SourceList[8].Name",
+      "type": "s",
+      "value": "Chive-TV"
+    },{
+      "state": "Video.SourceList[9].Name",
+      "type": "s",
+      "value": "HDMI WP"
+    },{
+      "state": "Video.SourceList[10].Name",
+      "type": "s",
+      "value": "No Source"
+    }
   ]
 }

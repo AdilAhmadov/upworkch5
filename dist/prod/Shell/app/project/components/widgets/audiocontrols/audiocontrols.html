@@ -4,20 +4,18 @@
     <div class="container audiocontrols-widget"> <!--audiocontrols-widget-->
         <div class="row"> <!--audio_zone-header-->
           <div class="col"> <!--audio__zone-label-->
-            <ch5-jointotext-string receivestatevalue="Audio.ControlList[{{idx}}].ZoneLabel"> </ch5-jointotext-string>
+            <ch5-jointotext-string receivestatevalue="Audio.ZoneLists.AudioZoneItem[{{idx}}].ZoneLabel"> </ch5-jointotext-string> 
           </div> 
           <div class="col-2"> <!--audio__zone-value-->
-            <ch5-jointotext-string receivestatevalue="Audio.ControlList[{{idx}}].ZoneVolumeValue"> </ch5-jointotext-string>
-          </div>  
+            <ch5-jointotext-string receivestatevalue="Audio.ZoneLists.AudioZoneItem[{{idx}}].ZoneVolumeValue"> </ch5-jointotext-string>
+          </div> 
           <div class="col"> <!--audio__zone-sourceSelection-->
             <!--receivestatevalue="Audio_Zone.Contract[{{idx}}].source"-->
-                <ch5-button id="btn_id" label="Source" sendeventonclick="Audio_Zone.Contract.Modal"
-                  receivestatesgiconstring="Audio.ControlList[{{idx}}].SelectedSourceIconClass" stretch="width" type="success"></ch5-button>
+                <ch5-button id="btn_id" label="Source" sendeventonclick="" stretch="width" type="success"></ch5-button>
         </div>
         <div class="row">
             <div class="col text-center border-bottom-5 ">
-              
-              <ch5-jointotext-string receivestatevalue="Audio.ControlList[{{idx}}].SelectedSourceLabel"> </ch5-jointotext-string>
+              <ch5-jointotext-string receivestatevalue="Audio.ZoneLists.AudioZoneItem[{{idx}}].SelectedSourceLabel"> </ch5-jointotext-string>
             </div>            
         </div>
         <div class="row mt-2"> <!--audio__zone-button-container-->
@@ -25,31 +23,31 @@
           <!--Mute Button-->
           <ch5-button
             iconclass="fas fa-volume-xmark"
-            sendEventOnClick="Audio.ControlList[{{idx}}].Mute"
-            receiveStateSelected="Audio.ControlList[{{idx}}].MuteState" type="danger">
+            sendEventOnClick="Audio.ZoneLists.AudioZoneItem[{{idx}}].Mute"
+            receiveStateSelected="Audio.ZoneLists.AudioZoneItem[{{idx}}].MuteState" type="danger">
           </ch5-button>
   
           <!--Master Check box Button-->
           <ch5-button
             checkboxshow="true"
             label="Master"
-            sendEventOnClick="Audio.ControlList[{{idx}}].Master"
-            receiveStateSelected="Audio.ControlList[{{idx}}].MasterState" type="secondary">
+            sendEventOnClick="Audio.ZoneLists.AudioZoneItem[{{idx}}].Master"
+            receiveStateSelected="Audio.ZoneLists.AudioZoneItem[{{idx}}].MasterState" type="secondary">
           </ch5-button>
   
           <!--Valume Down Button-->
           <ch5-button
             iconclass="fas fa-volume-low"
-            sendEventOnClick="Audio.ControlList[{{idx}}].VolumeDown"
-            receiveStateSelected="Audio.ControlList[{{idx}}].VolumeDownState"
+            sendEventOnClick="Audio.ZoneLists.AudioZoneItem[{{idx}}].VolumeDown"
+            receiveStateSelected="Audio.ZoneLists.AudioZoneItem[{{idx}}].VolumeDownState"
           >
           </ch5-button>
   
           <!--Valume Up Button-->
           <ch5-button
             iconclass="fas fa-volume-high"
-            sendEventOnClick="Audio.ControlList[{{idx}}].VolumeUp"
-            receiveStateSelected="Audio.ControlList[{{idx}}].VolumeUpState">
+            sendEventOnClick="Audio.ZoneLists.AudioZoneItem[{{idx}}].VolumeUp"
+            receiveStateSelected="Audio.ZoneLists.AudioZoneItem[{{idx}}].VolumeUpState">
           </ch5-button>
         </div>
       </div>

@@ -9,9 +9,7 @@
     {
       "name": "light-theme",
       "extends": "light-theme",
-      "backgroundProperties": {    
-        
-      }
+      "backgroundProperties": {}
     },
     {
       "name": "dark-theme",
@@ -31,7 +29,7 @@
       "name": "project-light-theme",
       "extends": "light-theme",
       "brandLogo": {
-        "url": "./app/template/assets/img/ch5-logo-light.svg",
+        "url": "./app/project/assets/img/ch5-logo-light.svg",
         "alt": "Crestron Logo",
         "receiveStateUrl": ""
       },
@@ -45,7 +43,7 @@
       "name": "project-dark-theme",
       "extends": "dark-theme",
       "brandLogo": {
-        "url": "./app/template/assets/img/ch5-logo-dark.svg",
+        "url": "./app/project/assets/img/ch5-logo-dark.svg",
         "alt": "Crestron Logo",
         "receiveStateUrl": ""
       },
@@ -59,7 +57,7 @@
       "name": "project-custom-theme",
       "extends": "light-theme",
       "brandLogo": {
-        "url": "./app/template/assets/img/ch5-logo-light.svg",
+        "url": "./app/project/assets/img/ch5-logo-light.svg",
         "alt": "Crestron Logo",
         "receiveStateUrl": ""
       },
@@ -71,7 +69,9 @@
     }
   ],
   "config": {
-    "controlSystem": {}
+    "controlSystem": {
+      "ipId": "0x04"
+    }
   },
   "header": {
     "display": true,
@@ -90,7 +90,7 @@
     "$component": ""
   },
   "content": {
-    "$defaultView": "audiopage",
+    "$defaultView": "videopage",
     "triggerViewProperties": {
       "gestureable": false,
       "disableAnimation": true
@@ -103,12 +103,13 @@
         "preloadPage": true,
         "cachePage": false,
         "standAloneView": false,
+      
         "navigation": {
           "sequence": 1,
-          "label": "",
+          "label": "mainpage",
           "isI18nLabel": false,
           "iconClass": "",
-          "iconUrl": "../app/template/assets/img/home-1-svgrepo-com.svg",
+          "iconUrl": "../app/project/assets/img/home-1-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
       },
@@ -117,14 +118,14 @@
         "fullPath": "./app/project/components/pages/audiopage/",
         "fileName": "audiopage.html",
         "preloadPage": true,
-        "cachePage": false,
+        "cachePage": true,
         "standAloneView": false,
         "navigation": {
           "sequence": 2,
-          "label": "",
+          "label": "audiopage",
           "isI18nLabel": false,
           "iconClass": "",
-          "iconUrl": "../app/template/assets/img/audio-svgrepo-com.svg",
+          "iconUrl": "../app/project/assets/img/audio-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
       },
@@ -133,14 +134,14 @@
         "fullPath": "./app/project/components/pages/videopage/",
         "fileName": "videopage.html",
         "preloadPage": true,
-        "cachePage": false,
+        "cachePage": true,
         "standAloneView": false,
         "navigation": {
           "sequence": 3,
-          "label": "",
+          "label": "videopage",
           "isI18nLabel": false,
           "iconClass": "",
-          "iconUrl": "../app/template/assets/img/tv-svgrepo-com.svg",
+          "iconUrl": "../app/project/assets/img/tv-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
       },
@@ -149,14 +150,14 @@
         "fullPath": "./app/project/components/pages/lightpage/",
         "fileName": "lightpage.html",
         "preloadPage": true,
-        "cachePage": false,
+        "cachePage": true,
         "standAloneView": false,
         "navigation": {
           "sequence": 4,
-          "label": "",
+          "label": "lightpage",
           "isI18nLabel": false,
           "iconClass": "",
-          "iconUrl": "../app/template/assets/img/light-bulb-svgrepo-com.svg",
+          "iconUrl": "../app/project/assets/img/light-bulb-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
       },
@@ -169,10 +170,10 @@
         "standAloneView": false,
         "navigation": {
           "sequence": 5,
-          "label": "",
+          "label": "shadespage",
           "isI18nLabel": false,
           "iconClass": "",
-          "iconUrl": "../app/template/assets/img/window-6-svgrepo-com.svg",
+          "iconUrl": "../app/project/assets/img/window-6-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
       },
@@ -185,10 +186,10 @@
         "standAloneView": false,
         "navigation": {
           "sequence": 6,
-          "label": "",
+          "label": "settingspage",
           "isI18nLabel": false,
           "iconClass": "",
-          "iconUrl": "../app/template/assets/img/gear-1-svgrepo-com.svg",
+          "iconUrl": "../app/project/assets/img/gear-1-svgrepo-com.svg",
           "iconPosition": "bottom"
         }
       },
@@ -198,7 +199,7 @@
         "fileName": "signin.html",
         "preloadPage": true,
         "cachePage": false,
-        "standAloneView": false,
+        "standAloneView": true,
         "navigation": {
           "sequence": 7,
           "label": "signin",
@@ -269,6 +270,11 @@
         "widgetName": "tvcontrols",
         "fullPath": "./app/project/components/widgets/tvcontrols/",
         "fileName": "tvcontrols.html"
+      },
+      {
+        "widgetName": "controlpads",
+        "fullPath": "./app/project/components/widgets/controlpads/",
+        "fileName": "controlpads.html"
       }
     ]
   }

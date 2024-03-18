@@ -63,7 +63,7 @@
   box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
   display: flex;
   justify-content: center;
-  max-height: 890px;
+  max-height: 900px;
 }
 #lightpage-page .light__scenecontainer {
   display: flex;
@@ -175,18 +175,10 @@
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/shadespage/shadespage.scss ***!
   \**************************************************************************************************************************************************/
-#shadespage-page ch5-jointotext-numeric {
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-  border: solid 1px dimgray;
-}
-#shadespage-page .shades__container {
+#shadespage-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/pages/signin/signin.scss ***!
@@ -231,7 +223,7 @@
   justify-content: center;
 }
 #videopage-page .tv__listSection {
-  max-height: 810px;
+  max-height: 815px;
 }
 #videopage-page .ch5-button--icon {
   font-size: 30px;
@@ -253,7 +245,6 @@
   \**********************************************************************************************************************************************************/
 .audiocontrols-widget {
   background: rgba(255, 255, 255, 0.777);
-  border: 1px solid hsl(0deg, 36%, 44%);
   border-radius: 10px;
   box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
   padding: 10px;
@@ -289,9 +280,42 @@
   \************************************************************************************************************************************************************/
 
 /*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/controlpads/controlpads.scss ***!
+  \******************************************************************************************************************************************************/
+.controlpads-widget .ch5-button {
+  min-height: 80px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 0%;
+  margin-right: 3px;
+}
+.controlpads-widget .ch5-button .ch5-button--icon {
+  font-size: 20px;
+  opacity: 1;
+  margin-bottom: 1px;
+}
+.controlpads-widget .ch5-button--pressed {
+  background-color: rgb(121, 160, 118);
+  scale: 1.1;
+  z-index: 1;
+}
+.controlpads-widget .ch5-button--pressed .ch5-button--icon {
+  color: rgb(0, 255, 76);
+}
+/*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/dpadcontrol/dpadcontrol.scss ***!
   \******************************************************************************************************************************************************/
-
+.dpadcontrol-widget {
+  width: 300px;
+  height: 300px;
+  border: 1px dashed green;
+}
+.dpadcontrol-widget .ch5-dpad .dpad-btn-icon {
+  font-size: 45px;
+}
 /*!**********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/keypadcontrol/keypadcontrol.scss ***!
   \**********************************************************************************************************************************************************/
@@ -300,14 +324,13 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./app/project/components/widgets/lightcontrolwidget/lightcontrolwidget.scss ***!
   \********************************************************************************************************************************************************************/
 .lightcontrolwidget-widget {
-  border: 1px solid hsl(0deg, 0%, 80%);
+  background: rgba(255, 255, 255, 0.777);
   border-radius: 10px;
   box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
-  padding: auto;
-  margin: 1px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   max-width: 350px;
-  display: inline-block;
 }
 .lightcontrolwidget-widget .lightCardTitle {
   margin: 5px;
@@ -324,55 +347,13 @@
 .lightcontrolwidget-widget .lightCardSlider {
   margin-left: 5px;
   margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .lightcontrolwidget-widget .lightCardSlider i {
-  color: #e8a910;
+  color: rgba(182, 138, 37, 0.6901960784);
   font-size: 16px;
-}
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider > div .ch5-slider .noUi-target {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 2px;
-}
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-connects, .lightcontrolwidget-widget .lightCardSlider .noUi-base {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 8px;
-}
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-connects {
-  height: 2px;
-  border: none;
-  inset: 2px;
-}
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-base {
-  height: 2px;
-  background-image: repeating-linear-gradient(to bottom, black 0%, black 50%, transparent 50% transparent 100%);
-  border: none;
-  border-bottom: 5px dotted rgb(155, 146, 141);
-  color: #fff;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider .noUi-target {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 2px;
-  background: #080e07;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-.lightcontrolwidget-widget .lightCardSlider .ch5-slider--size--small .noUi-handle {
-  border: none;
-  border-radius: 50%;
-  top: -18px;
-  width: 30px;
-  background-image: url(../.././app/template/assets/img/light-bulb-svgrepo-com.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: 0.2s ease-in-out;
 }
 .lightcontrolwidget-widget .lightCardSlider .lightCardButton {
   display: flex;
@@ -383,6 +364,7 @@
 }
 .lightcontrolwidget-widget .lightCardButton {
   margin: 5px;
+  text-align: center;
 }
 .lightcontrolwidget-widget .lightCardButton .ch5-button {
   margin: 5px;
@@ -514,7 +496,6 @@
   \****************************************************************************************************************************************************/
 .tv__container {
   background: rgba(255, 255, 255, 0.777);
-  border: 1px solid hsl(0deg, 36%, 44%);
   border-radius: 10px;
   box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.1);
   justify-content: center;

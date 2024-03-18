@@ -1,4 +1,61 @@
 
 <section id="shadespage-page" class="details-container" aria-labelledby="Shadespage">
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ch5-button-list
+                id="VideoSourceList"
+                orientation="horizontal"
+                scrollbar="false"
+                centerItems="true"
+                endless="false"
+                numberOfItems="11"
+                indexId="idx2"
+                buttonType="success"
+                buttonHAlignLabel="center"
+                buttonVAlignLabel="middle"
+                buttonIconPosition="first"
+                buttonShape="rounded-rectangle"          
+                buttonReceiveStateSelected="Video.SourceList[{{idx2}}].SelectedState"
+                buttonReceiveStateIconClass="Video.SourceList[{{idx2}}].IconClass"
+                buttonreceivestatelabel="Video.SourceList[{{idx2}}].Name"
+                buttonSendEventOnClick="Video.SourceList[{{idx2}}].Selection"
+                stretch="both"         
+                loadItems="visible-only"
+                clickHoldTime="1500">
+              </ch5-button-list>
+              </div>     
+        </div>
+        <br/>
+        <br/>
+        <div class="row">
+            <div class="col-3">
+                <ch5-template templateId="controlpads-widget" ></ch5-template>
+            </div>
+            <div class="col">
+                <ch5-video id="ch5-video_id"
+                    indexId=""
+                    aspectRatio="16:9"
+                    stretch="false"
+                    url=""
+                    receivestateurl=""
+                    sourceType="Network"
+                    userId=""
+                    password=""
+                    snapshotURL=""
+                    snapshotRefreshRate="5"
+                    size="xx-large">
+                </ch5-video>
+            </div>
+            <div class="col">
+                <ch5-template templateId="keypadcontrol-widget"></ch5-template>
+            </div>
+            <div class="col">
+                <ch5-template templateId="dpadcontrol-widget"></ch5-template>
+            </div>
+        </div>
+    </div>
+    
+    
+   
 </section>

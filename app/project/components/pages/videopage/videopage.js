@@ -22,7 +22,7 @@ const videopageModule = (() => {
     function onInit() {
        serviceModule.addEmulatorScenarioNoControlSystem("./app/project/components/pages/videopage/videopage-emulator.json");
        // Uncomment the below line and comment the above to load the emulator all the time.
-       // serviceModule.addEmulatorScenario("./app/project/components/pages/videopage/videopage-emulator.json");       
+       //serviceModule.addEmulatorScenario("./app/project/components/pages/videopage/videopage-emulator.json");       
     }
 
     /**

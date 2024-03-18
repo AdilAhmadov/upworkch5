@@ -231,13 +231,12 @@ div#pageStatusIdentifier.hide::before {
   line-height: 1.2;
   justify-content: center;
   align-items: center;
-  background-color: #e0dace;
+  background-color: rgba(213, 224, 206, 0.5215686275);
   margin: 10px;
   border-radius: 10px;
 }
 .horizontal-footer-menu .ch5-list-horizontal {
   display: flex;
-  background-color: #e0dace;
   align-items: center;
   text-align: center;
 }
@@ -338,6 +337,9 @@ div#pageStatusIdentifier.hide::before {
   .horizontal-footer-menu .list-item:last-child .horizontal-list-item {
     padding-right: 6px;
   }
+}
+.horizontal-footer-menu .swiper-thumb {
+  background-color: rgba(205, 138, 171, 0);
 }
 .horizontal-footer-menu .thumb-action {
   display: none;

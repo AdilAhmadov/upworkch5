@@ -1,4 +1,10 @@
 {
   "cues": [],
-  "onStart": []
+  "onStart": [   
+    {
+      "state": "Light.LightList[0].ZoneName",
+      "type": "s",
+      "value": "PRESET-4"
+    }
+  ]
 }

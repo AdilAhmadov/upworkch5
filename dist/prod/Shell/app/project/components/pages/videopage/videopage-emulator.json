@@ -179,14 +179,55 @@
   ],
   "onStart": [
     {
-      "state": "selected_button_from_list",
+      "state": "Video.ZoneList[0].SelectedSourceIconClass",
       "type": "s",
-      "value": "No buttons from ch5-list have been clicked"
+      "value": "fas fa-tv"
     },
     {
-      "state": "numXYZ",
-      "type": "n",
-      "value": 10
-    } 
+      "state": "Video.ZoneList[0].SelectedSourceName",
+      "type": "s",
+      "value": "Bar Display-1"
+    },
+    {
+      "state": "Video.ZoneList[0].ZoneName",
+      "type": "s",
+      "value": "Bar Display-1"
+    },
+    {
+      "state": "Video.PresetList[0].Name",
+      "type": "s",
+      "value": "PRESET-1"
+    } ,
+    {
+      "state": "Video.PresetList[1].Name",
+      "type": "s",
+      "value": "PRESET-2"
+    } ,
+    {
+      "state": "Video.PresetList[2].Name",
+      "type": "s",
+      "value": "PRESET-3"
+    } ,
+    {
+      "state": "Video.PresetList[3].Name",
+      "type": "s",
+      "value": "PRESET-4"
+    } ,
+    {
+      "state": "Video.PresetList[4].Name",
+      "type": "s",
+      "value": "PRESET-5"
+    } ,
+    {
+      "state": "Video.PresetList[5].Name",
+      "type": "s",
+      "value": "RECALL"
+    }   
+    ,
+    {
+      "state": "Video.SourceList[10].Name",
+      "type": "s",
+      "value": "RECALL"
+    }   
   ]
 }

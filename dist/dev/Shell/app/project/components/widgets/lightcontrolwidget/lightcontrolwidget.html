@@ -4,16 +4,15 @@
     <div class="lightcontrolwidget-widget" aria-labelledby="Lightcontrolwidget"> 
         <div class="lightCardTitle">
             <div> <!--receiveStateValue="1" -->
-                <ch5-jointotext-string value="Wall Light"  > </ch5-jointotext-string> 
+                <ch5-jointotext-string receivestatevalue="Light.LightList[{{idx}}].ZoneName" > </ch5-jointotext-string> 
             </div>
             <div> <!--receiveStateValue="1" -->
-                <ch5-jointotext-string value="50 %" > </ch5-jointotext-string> 
+                <ch5-jointotext-numeric receivestatevalue="Light.LightList[{{idx}}].LightNumericValue"> </ch5-jointotext-numeric> %
             </div>
         </div>
         <br/>
        
-            <div class="lightCardSlider">
-               
+            <div class="lightCardSlider">               
                 <i class="far fa-sun"></i>
                 <ch5-slider value="20"
                         id="LightSlider"
@@ -21,68 +20,22 @@
                         max="100"
                         step="1"
                         value="50"
-                        sendeventonchange="1"
-                        receivestatevalue="1" size="small"
-                        >
+                        sendeventonchange="Light.LightList[{{idx}}].LightOnChange"
+                        receivestatevalue="Light.LightList[{{idx}}].LightControlSliderState" size="small" handleshape="circle" handlesize="small">
                       </ch5-slider>
                       <i class="fas fa-sun"></i>
                 </div>
                 <div class="lightCardButton">
-                    <ch5-button id="LightBtnOn"  sendeventonclick="1" 
+                    <ch5-button id="LightBtnOn"  sendeventonclick="Light.LightList[{{idx}}].LightOn" receivestateselected="Light.LightList[{{idx}}].LightOnState" 
                         iconclass="far fa-lightbulb">
                     </ch5-button>
 
-                    <ch5-button id="LightBtnOff"
-                    
-                    sendeventonclick="2"
+                    <ch5-button id="LightBtnOff"                    
+                    sendeventonclick="Light.LightList[{{idx}}].LightOff"
+                    receivestateselected="Light.LightList[{{idx}}].LightOffState"
                     iconclass="fas fa-lightbulb">
                 </ch5-button>
-            </div>
-       
+            </div>       
     </div>
 </template>
 
-<!-- 
-<div class="lightcontrolwidget-widget" aria-labelledby="Lightcontrolwidget"> 
-    <div class="card">
-        <div class="row m-2"> 
-            <div class="col-6">             
-                <h5 class="card-title">Wall Light</h5>
-            </div>
-            <div class="col-6" style="text-align: right;">
-                <h5>50%</h5>
-            </div>
-        </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col">
-                    <ch5-slider value="20"
-                    min="0"
-                    max="100"
-                    step="1"
-                    sendeventonchange="slider_value_on_change"
-                    receivestatevalue="receive_slider_value" size="small">
-                  </ch5-slider>
-                </div>                  
-            </div>
-            <div class="row">
-                <div class="col">
-                    <ch5-button id="btn_id"
-                    label="Light On"
-                    sendeventonclick="btn_id_clicked">
-                </ch5-button>
-                </div>
-                <div class="col">
-                    <ch5-button id="btn_id"
-                    label="Light Off"
-                    sendeventonclick="btn_id_clicked">
-                </ch5-button>
-                </div>
-                
-                    
-                
-            </div>
-        </div>
-    </div>
-</div>
--->

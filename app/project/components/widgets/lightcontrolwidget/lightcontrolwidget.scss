@@ -1,14 +1,15 @@
 $fontFamily: sans-serif;
 
 .lightcontrolwidget-widget {
-  border: 1px solid hsl(0, 0%, 80%);
+  background: rgba(255, 255, 255, 0.777);
+  //border: 1px solid hsl(0, 36%, 44%);
   border-radius: 10px;
   box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.1);
-  padding: auto;
-  margin: 1px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   max-width: 350px;
-  display: inline-block;
+  //display: inline-block;
 
   .lightCardTitle {
     margin: 5px;
@@ -27,73 +28,14 @@ $fontFamily: sans-serif;
   .lightCardSlider {
     margin-left: 5px;
     margin-right: 5px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
      i{
-      color: #e8a910;
+      color: #b68a25b0;
       font-size: 16px;
      }
-     .ch5-slider {
-      >div{
-        .ch5-slider .noUi-target {
-          -webkit-appearance: none;
-          appearance: none;
-          height: 2px;
-      }
-     }
-    }
-    .ch5-slider .noUi-connects, .noUi-base {
-      -webkit-appearance: none;
-      appearance: none;
-      height: 8px;
-    }
-    .ch5-slider .noUi-connects{
-      height: 2px;
-      border: none;
-      inset: 2px;
-     //background: #e8a910;
-      
-    }
-    .ch5-slider .noUi-base {
-      //-webkit-appearance: none;
-      //appearance: none;
-      //background: #409934;
-	    height: 2px;
-      background-image: repeating-linear-gradient(to bottom, black 0%, black 50%, transparent 50% transparent 100%);
-	    //width: 55%;
-       border: none;
-       border-bottom: 5px dotted rgb(155, 146, 141);
-       color: #fff;
-       background-color: #fff;
-       
 
-	    //border-radius: 1rem;
-	    //box-shadow: 1px 5px 5px rgba(black, 0.3);
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-    }
-    .ch5-slider .noUi-target {
-      -webkit-appearance: none;
-      appearance: none;
-      height: 2px;
-      background: #080e07;
-      display: flex;
-      
-      align-items: center;
-      justify-items: center;
-  }
-    .ch5-slider--size--small .noUi-handle{
-      //background-color: gray;
-      border: none;
-      border-radius: 50%;
-      top: -18px;
-      width: 30px;
-      background-image: url("./light-bulb-svgrepo-com.svg");
-      
-      background-size: contain;
-      background-repeat: no-repeat;
-      transition: .2s ease-in-out;
-    }
   }
   .lightCardSlider
   .lightCardButton {
@@ -104,7 +46,9 @@ $fontFamily: sans-serif;
     align-items: center;
   }
   .lightCardButton {
+
     margin: 5px;
+    text-align: center;
     .ch5-button {
       margin: 5px;
       border-style: solid;
@@ -123,6 +67,4 @@ $fontFamily: sans-serif;
       border-color: #0091ea;
     }
   }
-  
- 
 }

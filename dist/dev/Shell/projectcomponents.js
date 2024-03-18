@@ -110,6 +110,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./app/project/components/widgets/controlpads/controlpads.scss":
+/*!*********************************************************************!*\
+  !*** ./app/project/components/widgets/controlpads/controlpads.scss ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://upworkch5/./app/project/components/widgets/controlpads/controlpads.scss?");
+
+/***/ }),
+
 /***/ "./app/project/components/widgets/dpadcontrol/dpadcontrol.scss":
 /*!*********************************************************************!*\
   !*** ./app/project/components/widgets/dpadcontrol/dpadcontrol.scss ***!
@@ -241,6 +251,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	__webpack_modules__["./app/project/components/pages/videopage/videopage.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/audiocontrols/audiocontrols.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/circulebuttons/circulebuttons.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./app/project/components/widgets/controlpads/controlpads.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/dpadcontrol/dpadcontrol.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/keypadcontrol/keypadcontrol.scss"](0, {}, __webpack_require__);
 /******/ 	__webpack_modules__["./app/project/components/widgets/lightcontrolwidget/lightcontrolwidget.scss"](0, {}, __webpack_require__);

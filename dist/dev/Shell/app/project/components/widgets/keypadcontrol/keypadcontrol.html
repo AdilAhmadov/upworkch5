@@ -11,8 +11,18 @@
 
 <template id="keypadcontrol-widget"> 
     <div class="keypadcontrol-widget" aria-labelledby="Keypadcontrol"> 
-    <!-- BEGIN::CHANGEAREA - your widget html markup goes here --> 
-
-    <!-- END::CHANGEAREA -->
+        <ch5-keypad id="keypad_id"
+        contractName=""
+        shape="square"
+        type="primary"
+        textOrientation="top"
+        size="regular"
+        showextrabutton="false"
+        sendEventOnclickStart=""
+        hidePoundButton="false"
+        hideAsteriskButton="false"
+        receiveStateHideAsteriskButton=""
+        receiveStateHidePoundButton="">       
+      </ch5-keypad>
     </div>
 </template>
