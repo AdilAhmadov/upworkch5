@@ -29,7 +29,7 @@
       "name": "project-light-theme",
       "extends": "light-theme",
       "brandLogo": {
-        "url": "./app/project/assets/img/ch5-logo-light.svg",
+        "url": "./app/template/assets/img/ch5-logo-light.svg",
         "alt": "Crestron Logo",
         "receiveStateUrl": ""
       },
@@ -43,7 +43,7 @@
       "name": "project-dark-theme",
       "extends": "dark-theme",
       "brandLogo": {
-        "url": "./app/project/assets/img/ch5-logo-dark.svg",
+        "url": "./app/template/assets/img/ch5-logo-dark.svg",
         "alt": "Crestron Logo",
         "receiveStateUrl": ""
       },
@@ -57,7 +57,7 @@
       "name": "project-custom-theme",
       "extends": "light-theme",
       "brandLogo": {
-        "url": "./app/project/assets/img/ch5-logo-light.svg",
+        "url": "./app/template/assets/img/ch5-logo-light.svg",
         "alt": "Crestron Logo",
         "receiveStateUrl": ""
       },

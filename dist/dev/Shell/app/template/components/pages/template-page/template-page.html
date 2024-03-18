@@ -4,6 +4,9 @@
 	<template id="header-section-page-template1">
 		<section id="header-page">
 			<nav role="navigation" class="navbar navbar-dark navbar-default fixed-top">
+				<div>
+					<ch5-datetime displaytype="time"></ch5-datetime>
+				</div>
 				<div id="pageStatusIdentifier" class="hide"></div>
 				<div class="change-theme form-inline">
 					<a class="btn-link toggler display-none" id="sidebarToggle" onclick="templatePageModule.toggleSidebar()">
@@ -15,10 +18,7 @@
 					<ch5-import-htmlsnippet id="template-remote-logger-settings-import-page" url="./app/template/components/widgets/template-remote-logger-settings/template-remote-logger-settings.html">
 					</ch5-import-htmlsnippet>
 				</div>
-				<div>
-					<ch5-datetime displaytype="time">
-					</ch5-datetime>
-				</div>
+				
 				<div id="header-section-page-set1">
 					
 				</div>

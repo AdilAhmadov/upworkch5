@@ -29,7 +29,7 @@ const featureModule = (() => {
         selectedTheme = response.themes.find((tempObj) => tempObj.name.trim().toLowerCase() === selectedThemeName.trim().toLowerCase());
 
         if (document.getElementById("brandLogo")) {
-          document.getElementById("brandLogo").setAttribute("url", selectedTheme.brandLogo.url);
+          document.getElementById("brandLogo").setAttribute("url", selectedTheme.brandLogo.URL);
         }
       });
     }, 500);
